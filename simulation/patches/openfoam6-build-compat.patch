@@ -1,0 +1,36 @@
+diff --git a/etc/config.sh/mpi b/etc/config.sh/mpi
+index 4d3d7a94e..bab444ab4 100644
+--- a/etc/config.sh/mpi
++++ b/etc/config.sh/mpi
+@@ -43,7 +43,7 @@ SYSTEMOPENMPI)
+         unset OPAL_PREFIX
+     fi
+ 
+-    libDir=`mpicc --showme:link | sed -e 's/.*-L\([^ ]*\).*/\1/'`
++    libDir=`mpicc --showme:link 2>/dev/null | sed -e 's/.*-L\([^ ]*\).*/\1/'`
+ 
+     # Bit of a hack: strip off 'lib' and hope this is the path to openmpi
+     # include files and libraries.
+diff --git a/src/OpenFOAM/db/IOstreams/hashes/OSHA1stream.H b/src/OpenFOAM/db/IOstreams/hashes/OSHA1stream.H
+index 9d59e23b6..01f135cdd 100644
+--- a/src/OpenFOAM/db/IOstreams/hashes/OSHA1stream.H
++++ b/src/OpenFOAM/db/IOstreams/hashes/OSHA1stream.H
+@@ -80,6 +80,18 @@ public:
+             sha1_.append(str, n);
+             return n;
+         }
++
++        //- Process single characters written through std::ostream
++        virtual int_type overflow(int_type c)
++        {
++            if (!traits_type::eq_int_type(c, traits_type::eof()))
++            {
++                const char ch = traits_type::to_char_type(c);
++                sha1_.append(&ch, 1);
++            }
++
++            return traits_type::not_eof(c);
++        }
+ };
+ 
+ 

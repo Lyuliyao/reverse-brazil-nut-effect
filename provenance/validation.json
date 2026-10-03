@@ -1,0 +1,160 @@
+{
+  "python": "3.9.12",
+  "numpy": "1.21.5",
+  "pandas": "1.4.2",
+  "cases": [
+    {
+      "case": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+      "frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.6041751493429,
+      "t_min_s": 19.08,
+      "snapshots": 0
+    },
+    {
+      "case": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.31563460242270003,
+      "t_min_s": 8.62,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -1.6803659935283,
+      "t_min_s": 5.66,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.295354359317,
+      "t_min_s": 16.07,
+      "snapshots": 0
+    },
+    {
+      "case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.3133737110109,
+      "t_min_s": 16.7,
+      "snapshots": 5
+    },
+    {
+      "case": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -1.6190945758358,
+      "t_min_s": 7.869999999999999,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.1297479537275,
+      "t_min_s": 15.14,
+      "snapshots": 0
+    },
+    {
+      "case": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.06666628103644363,
+      "t_min_s": 9.205,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -1.4425249975446,
+      "t_min_s": 12.21,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.158763088482,
+      "t_min_s": 14.29,
+      "snapshots": 0
+    },
+    {
+      "case": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.09060614024289329,
+      "t_min_s": 7.14,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.8493048343752,
+      "t_min_s": 13.4,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.0484092921365256,
+      "t_min_s": 14.75,
+      "snapshots": 0
+    },
+    {
+      "case": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": 0.002168689051207893,
+      "t_min_s": 9.795,
+      "snapshots": 2
+    },
+    {
+      "case": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+      "frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_mm": -0.5833939315955,
+      "t_min_s": 16.515,
+      "snapshots": 2
+    }
+  ],
+  "checksummed_files": 635,
+  "canonical_crossings_s": [
+    1.3035478437584322,
+    28.693273198664695
+  ],
+  "mechanism_controls": [
+    {
+      "control": "baseline",
+      "frames": 8000,
+      "dz_min_mm": -0.2210865606606,
+      "dz_final_mm": 0.2713625984171
+    },
+    {
+      "control": "settling_only",
+      "frames": 8000,
+      "dz_min_mm": -1.3209796886551002,
+      "dz_final_mm": -1.2146951075227999
+    },
+    {
+      "control": "shear_only",
+      "frames": 8000,
+      "dz_min_mm": -0.07079651920408656,
+      "dz_final_mm": 0.34641087940759996
+    },
+    {
+      "control": "equal_settling_stokes",
+      "frames": 8000,
+      "dz_min_mm": -0.07972687735727496,
+      "dz_final_mm": 0.8256475169581999
+    }
+  ],
+  "stokes_force_N": 1.27844159421531e-06,
+  "status": "passed"
+}

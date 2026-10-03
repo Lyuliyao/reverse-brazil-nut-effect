@@ -1,0 +1,111 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.4                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          couplingProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//===========================================================================//
+// sub-models & settings
+
+modelType "A"; // A or B
+
+couplingInterval 100;
+
+voidFractionModel divided;//centre;//
+
+locateModel engine;//engineIB;//
+
+meshMotionModel noMeshMotion;
+
+IOModel basicIO;
+
+probeModel off;
+
+dataExchangeModel twoWayMPI;
+
+averagingModel dense;//dilute;//
+
+clockModel off;//standardClock;//
+
+smoothingModel off;// localPSizeDiffSmoothing;// constDiffSmoothing; //
+
+gradPForceProps
+{
+    interpolation true;
+}
+
+forceModels
+(
+    DiFeliceDrag
+    gradPForce
+    viscForce
+);
+
+DiFeliceDragProps
+{
+    velFieldName "U";
+    interpolation true;
+}
+momCoupleModels
+(
+    implicitCouple
+);
+
+//turbulenceModelType "RASProperties";//"LESProperties";//OFversion24x
+turbulenceModelType turbulenceProperties;//"LESProperties";//OFversion30x
+
+//===========================================================================//
+// sub-model properties
+
+implicitCoupleProps
+{
+}
+
+
+viscForceProps
+{
+    interpolation true;
+}
+
+
+GidaspowDragProps
+{
+    velFieldName "U";
+    voidfractionFieldName "voidfraction";
+    granVelFieldName "Us";
+}
+
+engineProps
+{
+    treeSearch true;
+}
+
+dividedProps
+{
+}
+
+twoWayMPIProps
+{
+    maxNumberOfParticles 10100;
+    liggghtsPath "../DEM/in.liggghts_resume";
+}
+// ************************************************************************* //

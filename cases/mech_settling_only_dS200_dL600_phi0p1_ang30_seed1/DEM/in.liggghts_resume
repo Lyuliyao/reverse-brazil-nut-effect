@@ -1,0 +1,40 @@
+echo            both
+log             ../DEM/log.liggghts
+
+atom_style	    granular
+atom_modify	    map array
+communicate	    single vel yes
+
+boundary        p p f
+newton		    off
+units		    si
+
+include         ../DEM/in.liggghts_variable
+read_restart 	../DEM/post/restart/liggghts.restart
+
+neighbor        5.0e-4 bin
+neigh_modify    every 1 delay 0 check yes
+communicate     single vel yes
+newton          off
+
+include         ../DEM/in.liggghts_setting
+
+fix		cfd all couple/cfd couple_every 100 mpi
+fix		cfd2 all couple/cfd/force/implicit
+fix		integr all nve/sphere
+
+compute         centerOfMass all com
+compute         cc all contact/atom
+variable    dragtotalX equal f_cfd2[1]
+variable    dragtotalY equal f_cfd2[2]
+variable    dragtotalZ equal f_cfd2[3]
+
+compute		1 all erotate/sphere
+thermo_style	custom step atoms ke c_1 vol c_centerOfMass[3] v_dragtotalX v_dragtotalY v_dragtotalZ
+thermo		10000
+thermo_modify	lost ignore norm no
+
+dump        dmp all custom 50000 ../DEM/post/forcebalance_segments/t25_to_40/dump*.liggghts_forcebalance id type mass x y z vx vy vz fx fy fz f_contactforce[1] f_contactforce[2] f_contactforce[3] f_wallforce[1] f_wallforce[2] f_wallforce[3] f_gradPForce[1] f_gradPForce[2] f_gradPForce[3] f_viscForce[1] f_viscForce[2] f_viscForce[3] f_fluidforce[1] f_fluidforce[2] f_fluidforce[3] f_dragforce[1] f_dragforce[2] f_dragforce[3] radius c_cc
+compute     cpgl all pair/gran/local id force force_normal delta contactPoint
+dump        dlocal all local 500000 ../DEM/post/contact_segments/t25_to_40/contact.liggghts_local c_cpgl[1] c_cpgl[2] c_cpgl[3] c_cpgl[4] c_cpgl[5] c_cpgl[6] c_cpgl[7] c_cpgl[8] c_cpgl[9] c_cpgl[10] c_cpgl[11] c_cpgl[12] c_cpgl[13]
+run		    0 

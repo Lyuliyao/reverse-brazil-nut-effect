@@ -1,0 +1,42 @@
+echo            both
+log             ../DEM/log.liggghts
+
+atom_style      granular
+atom_modify     map array
+communicate     single vel yes
+
+boundary        p p f
+newton          off
+
+units           si
+
+include          ../DEM/in.liggghts_variable
+
+region             regDomain block ${xlo} ${xhi} ${ylo} ${yhi} ${zlo} ${zhi} units box
+create_box         2 regDomain
+
+include ../DEM/in.liggghts_setting
+
+variable           rSmall equal 0.0001
+variable           rLarge equal 0.0006
+region             regInsertMix block ${xlo} ${xhi} ${ylo} ${yhi} 0.00061 0.00439 units box
+
+fix                 ptsSmall all particletemplate/sphere 15485867 atom_type 1 density constant ${rhop} radius constant ${rSmall}
+fix                 ptsLarge all particletemplate/sphere 32452867 atom_type 2 density constant ${rhop} radius constant ${rLarge}
+fix                 pddMix all particledistribution/discrete 86028121 2 ptsSmall 0.5 ptsLarge 0.5
+fix                 insMix all insert/pack seed 49979687 distributiontemplate pddMix vel constant 0. 0. 0. insert_every once region regInsertMix volumefraction_region 0.2 ntry_mc 100000
+
+fix                 integr all nve/sphere
+
+compute         1 all erotate/sphere
+thermo_style    custom step atoms ke c_1 vol
+thermo          1000
+thermo_modify   lost ignore norm no
+
+run     10 upto
+write_restart post/restart/liggghts.restart
+
+
+
+
+

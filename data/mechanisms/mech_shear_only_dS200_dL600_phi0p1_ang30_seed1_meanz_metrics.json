@@ -1,0 +1,17 @@
+{
+  "A_RBNE": 7.079651920408655e-05,
+  "R_BNE": 2.0494639599488536e-05,
+  "case_name": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1",
+  "case_path": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1",
+  "control_type": "shear_only",
+  "csv_path": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+  "dz0": -6.725348287420132e-05,
+  "dz_final": 0.0003464108794076137,
+  "dz_min": -7.079651920408655e-05,
+  "early_slope": 2.896966471787301e-05,
+  "n_frames": 8000,
+  "t_cross": 2.685,
+  "t_end": 40.0,
+  "t_min": 0.15,
+  "t_start": 0.005
+}

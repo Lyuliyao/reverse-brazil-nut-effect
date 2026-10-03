@@ -1,0 +1,115 @@
+diff --git a/src/lagrangian/cfdemParticle/etc/bashrc b/src/lagrangian/cfdemParticle/etc/bashrc
+index 9cb41c3..f267c30 100755
+--- a/src/lagrangian/cfdemParticle/etc/bashrc
++++ b/src/lagrangian/cfdemParticle/etc/bashrc
+@@ -281,7 +281,7 @@ export -f cfdemLiggghts
+ 
+ #- shortcut to run liggghts in parallel
+ cfdemLiggghtsPar() { mpirun -np $2 $CFDEM_LIGGGHTS_EXEC -in $1; }
+-is_openmpi=`mpirun -version | grep "Open MPI" | wc -l`
++is_openmpi=`mpirun -version 2>/dev/null | grep "Open MPI" | wc -l`
+ # Open MPI (version > 3) no longer allows oversubscription by default, we do want that though
+ if [[ $is_openmpi == 1 ]]; then
+     cfdemLiggghtsPar() { mpirun -oversubscribe -np $2 $CFDEM_LIGGGHTS_EXEC -in $1; }
+diff --git a/src/lagrangian/cfdemParticle/etc/functions.sh b/src/lagrangian/cfdemParticle/etc/functions.sh
+index 9559cdd..f151b1f 100755
+--- a/src/lagrangian/cfdemParticle/etc/functions.sh
++++ b/src/lagrangian/cfdemParticle/etc/functions.sh
+@@ -612,6 +612,33 @@ get_mpirun_cmd()
+ }
+ #==================================#
+ 
++#==================================#
++#- helper to run MPI commands
++
++runMPICommand()
++{
++    nrProcs="$1"
++    machineFileName="$2"
++    debugMode="$3"
++    shift 3
++
++    if [[ "${SLURM_JOB_ID:-}" != "" && "${CFDEM_USE_SRUN:-true}" != "false" ]]; then
++        if [[ $machineFileName != "none" && $machineFileName != "" ]]; then
++            echo "WARNING: machinefile '$machineFileName' ignored because CFDEM is using srun inside Slurm."
++        fi
++        SRUN_MPI_TYPE="${CFDEM_SRUN_MPI_TYPE:-pmix}"
++        srun --mpi="$SRUN_MPI_TYPE" --overlap -n "$nrProcs" $debugMode "$@"
++    else
++        MPIRUN_CMD=`get_mpirun_cmd`
++        if [[ $machineFileName == "none" ]]; then
++            $MPIRUN_CMD -np "$nrProcs" $debugMode "$@"
++        else
++            $MPIRUN_CMD -machinefile "$machineFileName" -np "$nrProcs" $debugMode "$@"
++        fi
++    fi
++}
++#==================================#
++
+ #==================================#
+ #- function to run a DEM case in parallel
+ 
+@@ -657,14 +684,8 @@ parDEMrun()
+     echo 2>&1 | tee -a $logpath/$logfileName
+ 
+     #- detect mpi variant and set oversubscribe flag if open mpi
+-    MPIRUN_CMD=`get_mpirun_cmd`
+-
+     #- run applictaion
+-    if [[ $machineFileName == "none" ]]; then
+-        $MPIRUN_CMD -np $nrProcs $debugMode $CFDEM_LIGGGHTS_EXEC -in $solverName 2>&1 | tee -a $logpath/$logfileName
+-    else
+-        $MPIRUN_CMD -machinefile $machineFileName -np $nrProcs $debugMode $CFDEM_LIGGGHTS_EXEC -in $solverName 2>&1 | tee -a $logpath/$logfileName
+-    fi
++    runMPICommand "$nrProcs" "$machineFileName" "$debugMode" "$CFDEM_LIGGGHTS_EXEC" -in "$solverName" 2>&1 | tee -a $logpath/$logfileName
+ 
+     #- keep terminal open (if started in new terminal)
+     #read
+@@ -770,14 +791,8 @@ parCFDrun()
+     echo 2>&1 | tee -a $logpath/$logfileName
+ 
+     #- detect mpi variant and set oversubscribe flag if open mpi
+-    MPIRUN_CMD=`get_mpirun_cmd`
+-
+     #- run applictaion
+-    if [[ $machineFileName == "none" ]]; then
+-        $MPIRUN_CMD -np $nrProcs $debugMode $solverName -parallel 2>&1 | tee -a $logpath/$logfileName
+-    else
+-        $MPIRUN_CMD -machinefile $machineFileName -np $nrProcs $debugMode $solverName -parallel 2>&1 | tee -a $logpath/$logfileName
+-    fi
++    runMPICommand "$nrProcs" "$machineFileName" "$debugMode" "$solverName" -parallel 2>&1 | tee -a $logpath/$logfileName
+ 
+     #- keep terminal open (if started in new terminal)
+     #read
+@@ -881,8 +896,6 @@ parCFDDEMrun()
+     rm couplingFiles/*
+ 
+     #- detect mpi variant and set oversubscribe flag if open mpi
+-    MPIRUN_CMD=`get_mpirun_cmd`
+-
+     #- run DEM application (if separate)
+     if [[ $separateDEM == "false" || $separateDEM == "" ]]; then
+         echo "no separate DEM run."
+@@ -894,7 +907,7 @@ parCFDDEMrun()
+ 
+     #- run CFD application
+     if [[ $machineFileName == "none" ]]; then
+-        $MPIRUN_CMD -np $nrProcs $debugMode $solverName -parallel 2>&1 | tee -a $logpath/$logfileName
++        runMPICommand "$nrProcs" "$machineFileName" "$debugMode" "$solverName" -parallel 2>&1 | tee -a $logpath/$logfileName
+ 
+         #- reconstruct case
+         if [[ $reconstuctCase == "true" ]]; then   
+@@ -902,7 +915,7 @@ parCFDDEMrun()
+             reconstructPar -noLagrangian
+         fi
+     else
+-        $MPIRUN_CMD -machinefile $machineFileName -np $nrProcs $debugMode $solverName -parallel 2>&1 | tee -a $logpath/$logfileName
++        runMPICommand "$nrProcs" "$machineFileName" "$debugMode" "$solverName" -parallel 2>&1 | tee -a $logpath/$logfileName
+ 
+         #- reconstruct case
+         if [[ $reconstuctCase == "true" ]]; then   
+@@ -1447,4 +1460,3 @@ enableLiggghtsPackage()
+ 				echo $pkgName"/dir" >> $CWD/$whitelist
+ 		fi
+ }
+-

@@ -1,0 +1,182 @@
+[
+  {
+    "path": "data/experiments/frames/figure02_a.jpg",
+    "paper_figure": 2,
+    "panel": "a",
+    "pdf_page": 4,
+    "pdf_image": "Im1.jpg",
+    "bytes": 262764,
+    "sha256": "537929287b745fa56eb0de35cfa267cadffe631bf769f810db2e7595367578f5",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure02_b.jpg",
+    "paper_figure": 2,
+    "panel": "b",
+    "pdf_page": 4,
+    "pdf_image": "Im2.jpg",
+    "bytes": 335720,
+    "sha256": "d0245932eaddf9c89db0862683b5ed19ea63b409b1861a4aa6e76a02045cc453",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure02_c.jpg",
+    "paper_figure": 2,
+    "panel": "c",
+    "pdf_page": 4,
+    "pdf_image": "Im3.jpg",
+    "bytes": 257712,
+    "sha256": "39520e4980feabddf5ebbccd6e36bfd4e103ab9934a9328c9a0f3f0e51a94501",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure02_d.jpg",
+    "paper_figure": 2,
+    "panel": "d",
+    "pdf_page": 4,
+    "pdf_image": "Im4.jpg",
+    "bytes": 263011,
+    "sha256": "3bc8aebd12558434340d4a3df25fe91c20b4cf06e27299ccb2bf028dc40980c2",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure03_a.jpg",
+    "paper_figure": 3,
+    "panel": "a",
+    "pdf_page": 4,
+    "pdf_image": "Im5.jpg",
+    "bytes": 157680,
+    "sha256": "a992daa14e15678374c344374abc3111e5db3226efc9c3576d1aa170d676d6d9",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure03_b.jpg",
+    "paper_figure": 3,
+    "panel": "b",
+    "pdf_page": 4,
+    "pdf_image": "Im6.jpg",
+    "bytes": 153674,
+    "sha256": "869dfa4c6629ac92802abc964d1794edf3a8c1c7fe8866551d1dc9328f539fc2",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure03_c.jpg",
+    "paper_figure": 3,
+    "panel": "c",
+    "pdf_page": 4,
+    "pdf_image": "Im7.jpg",
+    "bytes": 159043,
+    "sha256": "d559273820945117fc7f90818524d2bd019db6d0acde4d8761521dacfa4c675d",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure03_d.jpg",
+    "paper_figure": 3,
+    "panel": "d",
+    "pdf_page": 4,
+    "pdf_image": "Im8.jpg",
+    "bytes": 152245,
+    "sha256": "c7eb379146981480dc1443b475f6c99c50c1babcf399d571bf6e70bf89e40776",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_a.jpg",
+    "paper_figure": 4,
+    "panel": "a",
+    "pdf_page": 5,
+    "pdf_image": "Im9.jpg",
+    "bytes": 342207,
+    "sha256": "4b4c548d4b6183e6ab1f5587dc128e741246591d5b24620b62442990595f1d50",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_b.jpg",
+    "paper_figure": 4,
+    "panel": "b",
+    "pdf_page": 5,
+    "pdf_image": "Im10.jpg",
+    "bytes": 190061,
+    "sha256": "56c956f81c0bf9d02215a1db3ddc29a5e2a246117baacfd93326e7df37279ea3",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_c.jpg",
+    "paper_figure": 4,
+    "panel": "c",
+    "pdf_page": 5,
+    "pdf_image": "Im11.jpg",
+    "bytes": 160463,
+    "sha256": "e48121ca64d69aa0a56de81f1112b6366f2fe5b9ab6623ab347df84320554cfa",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_d.jpg",
+    "paper_figure": 4,
+    "panel": "d",
+    "pdf_page": 5,
+    "pdf_image": "Im12.jpg",
+    "bytes": 358317,
+    "sha256": "62875b0adc2d0ca1e29008e5213486ba2a5dc76aaf0fa92762392c1bfcda2246",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_e.jpg",
+    "paper_figure": 4,
+    "panel": "e",
+    "pdf_page": 5,
+    "pdf_image": "Im13.jpg",
+    "bytes": 469025,
+    "sha256": "2165285828054a0153537b3c4256fa5912afd00e58c8a752f7acede135379729",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure04_f.jpg",
+    "paper_figure": 4,
+    "panel": "f",
+    "pdf_page": 5,
+    "pdf_image": "Im14.jpg",
+    "bytes": 353526,
+    "sha256": "c7eeb3b01908e9f05f2956648b42f4c4351f09737ef2d1975b09d3adfcf92c6c",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure05_a.png",
+    "paper_figure": 5,
+    "panel": "a",
+    "pdf_page": 6,
+    "pdf_image": "Im15.png",
+    "bytes": 205022,
+    "sha256": "85d97b995725f927807ac9b3b6fc0153ff2698b99b6888a9f0e498e2bf1ef455",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure05_b.png",
+    "paper_figure": 5,
+    "panel": "b",
+    "pdf_page": 6,
+    "pdf_image": "Im16.png",
+    "bytes": 212161,
+    "sha256": "87b36b83e548d936ebc455fb30645c4ea63d77afdf1d686fa7321efe506928f8",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure05_c.png",
+    "paper_figure": 5,
+    "panel": "c",
+    "pdf_page": 6,
+    "pdf_image": "Im17.png",
+    "bytes": 143112,
+    "sha256": "f2eaefe6518c6b1b777c00650653fb7b968be3122ddc02c3ca78aa4fe5260bc9",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  },
+  {
+    "path": "data/experiments/frames/figure05_d.png",
+    "paper_figure": 5,
+    "panel": "d",
+    "pdf_page": 6,
+    "pdf_image": "Im18.png",
+    "bytes": 171057,
+    "sha256": "c538c2f41c49fcc14aec982db75127ce6d94edbff48d6a58317ea9069f035a78",
+    "provenance": "embedded raster in user-provided final manuscript; no video/time-series reconstruction"
+  }
+]

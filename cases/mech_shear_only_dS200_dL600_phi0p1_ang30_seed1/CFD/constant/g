@@ -1,0 +1,10 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class uniformDimensionedVectorField;
+    location "constant";
+    object g;
+}
+dimensions      [0 1 -2 0 0 0 0];
+value           (4.898 0 0.0);   // mechanism probe mech_shear_only_dS200_dL600_phi0p1_ang30_seed1

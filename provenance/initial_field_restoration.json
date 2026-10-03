@@ -1,0 +1,58 @@
+[
+  {
+    "case": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "method": "Restore empty archived CFD input folders from the common canonical template, following the original generator; both cases use the same angle and CFD grid. Fresh-run execution settings are reset by prepare_case.py.",
+    "source_case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "fields": {
+      "voidfraction": "a67196bea0d27561f07abc58bd265484bf7054861ee62af3ca91f18ca6e7f54a",
+      "Us": "838798420b1eca5e40765d2252ae8908d4668daeca8981596e671b38145957dd",
+      "Ksl": "a009ff5f9ee9de461baab8072fc1b83ab5f08ef2900cd009e307f678736d1d5e",
+      "U": "0fe65d2ae3b341155133868be21432a06e3331fc2e3df5e74afed3b4aa935c7e",
+      "rho": "d5bd282b6eb9b90b89e07ec4fb4ae735e69aeb0f828c01099741e9af71662a27",
+      "p": "deb0ff7ba34932287b3749480a0cdd4bccc1882306411ab82eaa68d78253e1ea"
+    },
+    "validation": "All six initial fields in the other 17 archived cases have identical SHA-256 hashes.",
+    "additional_restored_files": {
+      "CFD/constant/RASProperties": "20f22ebef382c38a5e202779ea2c35690d1f273853bc785062bed9c08a787b79",
+      "CFD/constant/turbulenceProperties": "54e71a72180f365a6f66d7ade484a64b99d06b273e5f63593a0f695d05d63bc1",
+      "CFD/constant/g": "d922b789b6b71df87400379a74655bd345656f739db0b3764fcad3f563a59425",
+      "CFD/constant/couplingProperties": "26188505bd3ea6e92a59591b2b3f3f97325745e629ea372dbac068f186fc6c6b",
+      "CFD/constant/transportProperties": "85782b409cfe41af289b61495daafc3673afb3648a9d07489daa45f960d4c6c3",
+      "CFD/constant/liggghtsCommands": "d3c868caace746ddc51ee8a2f20c85f62e2978203b54258e8d7535410c023928",
+      "CFD/system/decomposeParDict": "6420275477459987f8583c6fdbb7e31264a70adcfb8b91e2f85d0c119ec0e489",
+      "CFD/system/fvSchemes": "d9c305d821cb71d153e0642661a6c7e19664429a0f040fd8bfe0254478cef92b",
+      "CFD/system/fvOptions": "7f7893c3c73221e8d293bc9d184e935da6f163e3aefb08a92cd1c2768b69bb2d",
+      "CFD/system/fvSolution": "521b235a6cf212360bacad95e86db57068daa450bc34e153a01dfd1a1abcd209",
+      "CFD/system/blockMeshDict": "32329c56b60cb4e3a9fdfe218b8636c43aaa7249b81a2040cd4b94c5ea6a2d20",
+      "CFD/system/controlDict": "9666758ec98dde5f96453cc81ee2c3d3acaf9acc8c244e2ecb1ea9e32eefb591"
+    }
+  },
+  {
+    "case": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "method": "Restore empty archived CFD input folders from the common canonical template, following the original generator; both cases use the same angle and CFD grid. Fresh-run execution settings are reset by prepare_case.py.",
+    "source_case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "fields": {
+      "voidfraction": "a67196bea0d27561f07abc58bd265484bf7054861ee62af3ca91f18ca6e7f54a",
+      "Us": "838798420b1eca5e40765d2252ae8908d4668daeca8981596e671b38145957dd",
+      "Ksl": "a009ff5f9ee9de461baab8072fc1b83ab5f08ef2900cd009e307f678736d1d5e",
+      "U": "0fe65d2ae3b341155133868be21432a06e3331fc2e3df5e74afed3b4aa935c7e",
+      "rho": "d5bd282b6eb9b90b89e07ec4fb4ae735e69aeb0f828c01099741e9af71662a27",
+      "p": "deb0ff7ba34932287b3749480a0cdd4bccc1882306411ab82eaa68d78253e1ea"
+    },
+    "validation": "All six initial fields in the other 17 archived cases have identical SHA-256 hashes.",
+    "additional_restored_files": {
+      "CFD/constant/RASProperties": "20f22ebef382c38a5e202779ea2c35690d1f273853bc785062bed9c08a787b79",
+      "CFD/constant/turbulenceProperties": "54e71a72180f365a6f66d7ade484a64b99d06b273e5f63593a0f695d05d63bc1",
+      "CFD/constant/g": "d922b789b6b71df87400379a74655bd345656f739db0b3764fcad3f563a59425",
+      "CFD/constant/couplingProperties": "26188505bd3ea6e92a59591b2b3f3f97325745e629ea372dbac068f186fc6c6b",
+      "CFD/constant/transportProperties": "85782b409cfe41af289b61495daafc3673afb3648a9d07489daa45f960d4c6c3",
+      "CFD/constant/liggghtsCommands": "d3c868caace746ddc51ee8a2f20c85f62e2978203b54258e8d7535410c023928",
+      "CFD/system/decomposeParDict": "6420275477459987f8583c6fdbb7e31264a70adcfb8b91e2f85d0c119ec0e489",
+      "CFD/system/fvSchemes": "d9c305d821cb71d153e0642661a6c7e19664429a0f040fd8bfe0254478cef92b",
+      "CFD/system/fvOptions": "7f7893c3c73221e8d293bc9d184e935da6f163e3aefb08a92cd1c2768b69bb2d",
+      "CFD/system/fvSolution": "521b235a6cf212360bacad95e86db57068daa450bc34e153a01dfd1a1abcd209",
+      "CFD/system/blockMeshDict": "32329c56b60cb4e3a9fdfe218b8636c43aaa7249b81a2040cd4b94c5ea6a2d20",
+      "CFD/system/controlDict": "9666758ec98dde5f96453cc81ee2c3d3acaf9acc8c244e2ecb1ea9e32eefb591"
+    }
+  }
+]

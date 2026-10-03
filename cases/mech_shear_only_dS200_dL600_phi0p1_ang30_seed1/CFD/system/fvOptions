@@ -1,0 +1,26 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvOptions;
+}
+
+accelX
+{
+    type    vectorSemiImplicitSource;
+    active  true;
+
+    vectorSemiImplicitSourceCoeffs
+    {
+        selectionMode   all;        
+        volumeMode      specific;   
+
+        fieldNames  (U);
+
+        injectionRateSuSp
+        {
+            U   ( (4.898 0 0.0) 0 ); 
+        }
+    }
+}

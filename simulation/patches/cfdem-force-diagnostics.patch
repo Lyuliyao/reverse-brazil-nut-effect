@@ -1,0 +1,88 @@
+diff --git a/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.C b/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.C
+index a993f7e..1649349 100644
+--- a/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.C
++++ b/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.C
+@@ -277,6 +277,8 @@ Foam::cfdemCloud::cfdemCloud
+     idKslRotationCM_(-1),
+     idFhydro_(-1),
+     idVisc_(-1),
++    idGradPForce_(-1),
++    idViscForce_(-1),
+     idBlockiness_(-1),
+     idArea_(-1),
+     idVol_(-1),
+diff --git a/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.H b/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.H
+index 86bc61b..96ee9f2 100644
+--- a/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.H
++++ b/src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.H
+@@ -598,6 +598,8 @@ public:
+         mutable int idKslRotationCM_; // id of implicit torque coefficient for multisphere in DEM in modular data exchange framework
+         mutable int idFhydro_; // id of void fraction in DEM in modular data exchange framework
+         mutable int idVisc_; // id of fluid vel in DEM in modular data exchange framework
++        mutable int idGradPForce_; // id of gradP force in DEM in modular data exchange framework
++        mutable int idViscForce_; // id of viscous force in DEM in modular data exchange framework
+         mutable int idBlockiness_; // id of sq blockiness in DEM in modular data exchange framework
+         mutable int idArea_; // id of sq area in DEM in modular data exchange framework
+         mutable int idVol_; // id of sq volume in DEM in modular data exchange framework
+@@ -634,6 +636,8 @@ public:
+         int& idKslRotationCM() const {return idKslRotationCM_;};
+         int& idFhydro() const {return idFhydro_;};
+         int& idVisc() const {return idVisc_;};
++        int& idGradPForce() const {return idGradPForce_;};
++        int& idViscForce() const {return idViscForce_;};
+         int& idBlockiness() const {return idBlockiness_;};
+         int& idArea() const {return idArea_;};
+         int& idVol() const {return idVol_;};
+diff --git a/src/lagrangian/cfdemParticle/subModels/forceModel/forceSubModels/forceSubModel/forceSubModel.C b/src/lagrangian/cfdemParticle/subModels/forceModel/forceSubModels/forceSubModel/forceSubModel.C
+index 483fce8..2c0a8f2 100644
+--- a/src/lagrangian/cfdemParticle/subModels/forceModel/forceSubModels/forceSubModel/forceSubModel.C
++++ b/src/lagrangian/cfdemParticle/subModels/forceModel/forceSubModels/forceSubModel/forceSubModel.C
+@@ -619,6 +619,9 @@ void forceSubModel::setupCommunication() const
+         {
+             particleCloud_.registerFieldsToDEM("dragforce_cm","vector-multisphere",particleCloud_.idDragExpCM());
+         }
++        particleCloud_.registerFieldsToDEM("gradPForce","vector-atom",particleCloud_.idGradPForce());
++        particleCloud_.registerFieldsToDEM("viscForce","vector-atom",particleCloud_.idViscForce());
++
+         if(useTorque())
+         {
+             if(implTorqueDEM())
+@@ -643,6 +646,10 @@ void forceSubModel::setupCommunication() const
+         {
+             particleCloud_.registerFieldsToDEM("dragforce","vector-atom",particleCloud_.idDragExp());
+         }
++
++        particleCloud_.registerFieldsToDEM("gradPForce","vector-atom",particleCloud_.idGradPForce());
++        particleCloud_.registerFieldsToDEM("viscForce","vector-atom",particleCloud_.idViscForce());
++
+         if(useTorque())
+         {
+             if(implTorqueDEM())
+diff --git a/src/lagrangian/cfdemParticle/subModels/forceModel/gradPForce/gradPForce.C b/src/lagrangian/cfdemParticle/subModels/forceModel/gradPForce/gradPForce.C
+index ab3e3be..efef72d 100644
+--- a/src/lagrangian/cfdemParticle/subModels/forceModel/gradPForce/gradPForce.C
++++ b/src/lagrangian/cfdemParticle/subModels/forceModel/gradPForce/gradPForce.C
+@@ -205,6 +205,9 @@ void gradPForce::setForce() const
+             }
+         }
+ 
++        for(int j=0;j<3;j++)
++            particleCloud_.fieldsToDEM[particleCloud_.idGradPForce()][index][j] = force[j];
++
+         // write particle based data to global array
+         forceSubM(0).partToArray(index,force,vector::zero);
+     }
+diff --git a/src/lagrangian/cfdemParticle/subModels/forceModel/viscForce/viscForce.C b/src/lagrangian/cfdemParticle/subModels/forceModel/viscForce/viscForce.C
+index 37c8d10..2286f43 100644
+--- a/src/lagrangian/cfdemParticle/subModels/forceModel/viscForce/viscForce.C
++++ b/src/lagrangian/cfdemParticle/subModels/forceModel/viscForce/viscForce.C
+@@ -182,6 +182,9 @@ void viscForce::setForce() const
+             }
+         }
+ 
++        for(int j=0;j<3;j++)
++            particleCloud_.fieldsToDEM[particleCloud_.idViscForce()][index][j] = force[j];
++
+         // write particle based data to global array
+         forceSubM(0).partToArray(index,force,vector::zero);
+     }

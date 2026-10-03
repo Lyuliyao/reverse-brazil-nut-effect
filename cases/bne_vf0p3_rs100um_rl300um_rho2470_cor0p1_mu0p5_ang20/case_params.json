@@ -1,0 +1,23 @@
+{
+  "angle_deg": 20,
+  "case_name": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+  "case_path": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+  "dump_every": 50000,
+  "dump_phys_interval": 0.005,
+  "end_time": "5e-4",
+  "forcebalance_segment_dir": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t39_to_40",
+  "forcebalance_segment_label": "t39_to_40",
+  "friction": 0.5,
+  "g_mag": 9.796,
+  "gx": 3.3504293240182506,
+  "gy": 0.0,
+  "gz": -9.20522891321876,
+  "initial_state": "well_mixed",
+  "large_radius": 0.0003,
+  "nprocs": 16,
+  "restitution": 0.1,
+  "rhop": 2470,
+  "small_radius": 0.0001,
+  "volfrac": 0.3,
+  "write_interval": "5e-4"
+}

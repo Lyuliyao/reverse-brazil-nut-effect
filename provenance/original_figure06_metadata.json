@@ -1,0 +1,21 @@
+{
+  "generated": "2026-07-09T20:21:44",
+  "script": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim1_canonical_v2.py",
+  "case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+  "t1_s": 1.3035478437584322,
+  "t2_s": 28.693273198664695,
+  "panels_FG": "horizontally averaged fluid streamwise velocity <u_x>(z) from OpenFOAM U fields (average over the periodic x and y directions), at the CFD output times nearest to t1 and t2",
+  "fluid_times_s": {
+    "F": 1.5,
+    "G": 28.5
+  },
+  "max_ux_mm_s": {
+    "F": 7.975796237304687,
+    "G": 27.47714423828125
+  },
+  "velocity_axis_mm_s": 30.0,
+  "outputs": [
+    "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim1_canonical_v2.pdf",
+    "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim1_canonical_v2.png"
+  ]
+}

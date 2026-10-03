@@ -1,0 +1,40 @@
+{
+  "openfoam6-build-compat.patch": {
+    "source": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/OpenFOAM/OpenFOAM-6",
+    "upstream_commit": "af7d7f427be78e9b9beb6aceca8fe7d5d4636876",
+    "paths": [
+      "etc/config.sh/mpi",
+      "src/OpenFOAM/db/IOstreams/hashes/OSHA1stream.H"
+    ]
+  },
+  "cfdem-force-diagnostics.patch": {
+    "source": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/CFDEM/CFDEMcoupling-PUBLIC",
+    "upstream_commit": "abedb0712debed5c055be5aa7262fef62fcf3a62",
+    "paths": [
+      "src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.C",
+      "src/lagrangian/cfdemParticle/cfdemCloud/cfdemCloud.H",
+      "src/lagrangian/cfdemParticle/subModels/forceModel/forceSubModels/forceSubModel/forceSubModel.C",
+      "src/lagrangian/cfdemParticle/subModels/forceModel/gradPForce/gradPForce.C",
+      "src/lagrangian/cfdemParticle/subModels/forceModel/viscForce/viscForce.C"
+    ]
+  },
+  "cfdem-run-compat.patch": {
+    "source": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/CFDEM/CFDEMcoupling-PUBLIC",
+    "upstream_commit": "abedb0712debed5c055be5aa7262fef62fcf3a62",
+    "paths": [
+      "src/lagrangian/cfdemParticle/etc/bashrc",
+      "src/lagrangian/cfdemParticle/etc/functions.sh"
+    ]
+  },
+  "liggghts-force-diagnostics.patch": {
+    "source": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/LIGGGHTS/LIGGGHTS-PUBLIC",
+    "upstream_commit": "3d5c00f20519e6bb6eb6756f51f1ad36564e649d",
+    "paths": [
+      "src/fix_cfd_coupling_force.cpp",
+      "src/fix_cfd_coupling_force.h",
+      "src/fix_cfd_coupling_force_implicit.cpp",
+      "src/fix_wall_gran.cpp",
+      "src/fix_wall_gran.h"
+    ]
+  }
+}

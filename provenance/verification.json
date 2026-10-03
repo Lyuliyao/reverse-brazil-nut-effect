@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "data_validator": "provenance/validation.json",
+  "python": "3.9.12",
+  "matplotlib": "3.5.1",
+  "h5py": "3.6.0",
+  "figure_generation": "All five numerical figures generated as PDF and PNG; all five visually inspected",
+  "prepared_cases": 19,
+  "physical_inputs_and_insertion_seeds_preserved": true,
+  "upstream_patch_application_checks": "All four patches apply to recorded upstream source files",
+  "new_physical_simulations_run": false,
+  "figure_outputs": {
+    "figure06.pdf": "772b539618d8ff6c595dfc250fe24cf05ad62205ff7b8eee296ec4c9dd1d3f57",
+    "figure06.png": "547bed5be1310f7de74d5aaae4b11ee0a9591286480938a7e0759bd8f8d974d1",
+    "figure07.pdf": "5a82aca2c378e1e5f9cf88949194e62dc85d8fca78fbe8b34ad38822bd6580f9",
+    "figure07.png": "a43490fbe81b7a0caf5c5b237ffbecdee379b261d334fa4cda9517659a5213d4",
+    "figure08.pdf": "14f48dbf616d2ca92bce8abe8d0b108638f62da1a9d0bc71c53929f2a74b3d7a",
+    "figure08.png": "ca22289faf59b12e3fb147ed3f95c93c70dc4439ccc89da1d2798268b9eafd6f",
+    "figure09.pdf": "36059ab61ff0f57f577a5195c12d314655d0247eadfa701d9a520653a9477135",
+    "figure09.png": "6ff66995ffe467500b889c3a24809cc0d9676239c9355f506b63e1f6b611cfd4",
+    "figure10.pdf": "17eef3d442826eb1334c17a0ae99c79dc6dd5da8f95b79aa9551293b5d1f2a81",
+    "figure10.png": "3ef815ceddb6debfd30de0bda3a69d37c1dbb5e8f666a550c4e482aa9a1a6c2d"
+  }
+}

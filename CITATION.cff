@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using these code and data."
+type: software
+title: "Transient Reverse Brazil Nut Effect in Particle-Laden Inclined Flows: code and data"
+authors:
+  - family-names: Lyu
+    given-names: Liyao
+  - family-names: Ding
+    given-names: Lingyun
+  - family-names: Gu
+    given-names: Yifan
+  - family-names: Ba
+    given-names: Yanming
+  - family-names: Bertozzi
+    given-names: Andrea
+repository-code: "https://github.com/Lyuliyao/reverse-brazil-nut-effect"
+version: "1.0.0"
+date-released: "2026-10-03"

@@ -1,0 +1,127 @@
+[
+  {
+    "repository_path": "data/mechanisms/mech_baseline_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_baseline_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "sha256": "e3f7a43671db48c30499f31ca9cdbc16d89a4e10acd64d2f97a10566c383dc1a"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_baseline_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_baseline_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "sha256": "3fd05cac340a1a3d7b24e7f20e0b288b2e000b821a1fa82f955eba9d1da10baa"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "sha256": "7172fe8689568b43843a94f1ff96ad88a8a9b7a37b9eea60e915070c5f0c9aa5"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "sha256": "4362aa824ebf7d87a09a602234b315ec0263482e703542dcfd8673b03b17963e"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "sha256": "c5b3e0eab0a11d521747670d62746e780e5db0229c135e9f3ec4fb5a77aae820"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "sha256": "df6e547ecad48c2eedfa882879388d3d4f4157ea1f00667bb6739a01f3c79ca5"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+    "sha256": "966efe5b22fdeab2b54c52a73ac6fea2761c350a640fd4cdd81c4f7cd78554e0"
+  },
+  {
+    "repository_path": "data/mechanisms/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1_meanz_metrics.json",
+    "sha256": "153be461544547edc342e505840e7d302172fc702830274f297b3ef51b9bc693"
+  },
+  {
+    "repository_path": "data/canonical_mean_heights.csv",
+    "source_path": "https://github.com/Lyuliyao/cfdem_particle_ladden_flow/blob/408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a/analysis/results/validate_canonical_meanz.csv",
+    "sha256": "c23c725d78ad8970da936a6b70af3aa46242efd3ecadf8c28652c09535f1ad98"
+  },
+  {
+    "repository_path": "analysis/raw/analyze_bne_case.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/tools/analyze_bne_case.py",
+    "sha256": "674dd18ecf8a018d5221d597647a165236974941534728382f40e186ccbf9c08"
+  },
+  {
+    "repository_path": "analysis/raw/pack_forcebalance_segment.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/tools/pack_forcebalance_segment.py",
+    "sha256": "1958ede681fc9353284c405b5497d0214af14f9c3ce3fa4d616adf8a5876eca2"
+  },
+  {
+    "repository_path": "analysis/raw/pack_z_profiles.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/tools/pack_z_profiles.py",
+    "sha256": "982fa7365928d8388abfd644a4f85ccf172cfd0a34acd9edbe563a62f9bc39ab"
+  },
+  {
+    "repository_path": "analysis/raw/verify_z_profiles_h5.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/tools/verify_z_profiles_h5.py",
+    "sha256": "2d243b677c94b39ffc0439e30258bc04ecc2c89c854aede6afab41034860f5a3"
+  },
+  {
+    "repository_path": "analysis/raw/io_common.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/io_common.py",
+    "sha256": "0241bafe7edefeb4ceb1b75a9ada6b81835a5c734bf7c636f492526b22385eda"
+  },
+  {
+    "repository_path": "analysis/raw/compute_mean_height_metrics.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/compute_mean_height_metrics.py",
+    "sha256": "a7410b784a789dd3af691f90ade3ddd86d1bd692d792d73f29902d1dcd13ce9d"
+  },
+  {
+    "repository_path": "simulation/tools/compute_equal_settling_addforce.py",
+    "source_path": "https://github.com/Lyuliyao/cfdem_particle_ladden_flow/blob/408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a/tools/compute_equal_settling_addforce.py",
+    "sha256": "17e61d47c54a42ea6489d4e519bee0c1f5498d297a31625793b0975038f0670f"
+  },
+  {
+    "repository_path": "simulation/reference/generate_bne_cases.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/tools/generate_bne_cases.py",
+    "sha256": "c92df5bd46053b3fd6e3e394f40046d0fa2423351bb4a56f2ad84ce7c0f9fc9d"
+  },
+  {
+    "repository_path": "simulation/reference/generate_mechanism_cases.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/tools/generate_mechanism_cases.py",
+    "sha256": "179ea2300989f460a750e2f822cb2ca1c05ccfbd6b5c3e456d65efdd243b1cf5"
+  },
+  {
+    "repository_path": "provenance/original_figure06_metadata.json",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim1_canonical_v2_metadata.json",
+    "sha256": "0ad1489191da8c29f80397fe5965339349da932db10b4fedce38182dacaeabd1"
+  },
+  {
+    "repository_path": "analysis/figure06.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim1_canonical_v2.py",
+    "original_sha256": "97c19d2440e3f0281869ef4239cb2ae7904b9046d85a9e4d9b533a4abd1e7878",
+    "adaptation": "relative paths; pre-extracted particle snapshots and velocity profiles; tabular time series"
+  },
+  {
+    "repository_path": "analysis/figure07.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim2_alpha_phi.py",
+    "original_sha256": "5a88d24217f00527bfffa8afa5036d50abd54e1c500660b991a00e82b0de2f9c",
+    "adaptation": "relative paths; pre-extracted particle snapshots and velocity profiles; tabular time series"
+  },
+  {
+    "repository_path": "analysis/figure08.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim3_radius_phi_ang30.py",
+    "original_sha256": "8afe58f5594efdb916b3f7cb637c4ae1d0779516b63c937aee4863305e3a8fd5",
+    "adaptation": "relative paths; pre-extracted particle snapshots and velocity profiles; tabular time series"
+  },
+  {
+    "repository_path": "analysis/figure09.py",
+    "source_path": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/results/paper_figs/fig_sim4_force_mechanism.py",
+    "original_sha256": "0df6b3f57812e1d2c6a759bfa2cc31d28c14c56285ad60bc21b69cea20418148",
+    "adaptation": "relative paths; pre-extracted particle snapshots and velocity profiles; tabular time series"
+  },
+  {
+    "repository_path": "analysis/figure10.py",
+    "source_path": "https://github.com/Lyuliyao/cfdem_particle_ladden_flow/blob/408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a/paper_figs/fig_sim5_equal_settling.py",
+    "original_sha256": "be5f0dad3046dd207bb1382a2dd716d03d95d0c3f7e8185204a30e189221dccd",
+    "adaptation": "relative data/output paths and output filenames"
+  }
+]

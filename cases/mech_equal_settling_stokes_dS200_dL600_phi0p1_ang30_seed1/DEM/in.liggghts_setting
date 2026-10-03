@@ -1,0 +1,26 @@
+fix  matE   all property/global youngsModulus  peratomtype  5e8     5e8
+fix  matNu  all property/global poissonsRatio  peratomtype  0.45    0.45
+
+fix cor all property/global coefficientRestitution peratomtypepair 2  0.1  0.1  0.1 0.1
+
+fix mu  all property/global coefficientFriction    peratomtypepair 2  0.5  0.5  0.5  0.5
+
+fix mur all property/global coefficientRollingFriction peratomtypepair 2  0.0  0.0  0.0  0.0
+
+pair_style  gran model hertz tangential history rolling_friction cdt
+pair_coeff  * *
+
+timestep            1e-7
+fix                 grav all gravity ${geff} vector ${gx} ${gy} ${gz}
+fix                 zwalls1 all wall/gran model hertz tangential history rolling_friction cdt primitive type 1  zplane 0.0
+fix                 zwalls2 all wall/gran model hertz tangential history rolling_friction cdt primitive type 1 zplane 5e-3
+
+# species groups (type 1 = small, type 2 = large)
+group               gsmall type 1
+group               glarge type 2
+
+# --- equal-settling probe: per-species vertical body force (ARTIFICIAL) ---
+fix                 addsmall gsmall addforce 0.0 0.0 0.0
+fix                 addlarge glarge addforce 0.0 0.0 1.27844159421531e-06
+
+

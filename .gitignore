@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+/outputs/
+/runs/
+*.log
+# CFD/0 is a required input directory and must be tracked.

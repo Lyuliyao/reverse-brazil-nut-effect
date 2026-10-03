@@ -1,0 +1,3378 @@
+[
+  {
+    "case": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20.tar",
+    "archive_bytes": 15011010560,
+    "files": [
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "bytes": 438
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "bytes": 264
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/time_series.tsv",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/analysis/time_series.tsv",
+        "bytes": 2210287
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "bytes": 1821
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "bytes": 1368
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "bytes": 359
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "bytes": 855
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [],
+    "series": {
+      "n_frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0006041751493429511,
+      "time_min_s": 19.08
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "163db5465369eef78d6f8261c5179459394fc50b21d174af9eb861706d39d8d7",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 15007713280,
+    "files": [
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 2203997
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1821
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1368
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 855
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t8.62.npz",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "frame_index": 61,
+        "requested_time_s": 8.62,
+        "actual_time_s": 8.62,
+        "row_count": 2711
+      },
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p05_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 99,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 2711
+      }
+    ],
+    "series": {
+      "n_frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0003156346024227202,
+      "time_min_s": 8.62
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "6a001c2b2fbcb9caca3c797c6d3c28db5544e390d6e654ef0168f24f662086ba",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 14605639680,
+    "files": [
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 1971845
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1821
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1368
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 855
+      },
+      {
+        "path": "cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t5.66.npz",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "frame_index": 65,
+        "requested_time_s": 5.66,
+        "actual_time_s": 5.66,
+        "row_count": 2266
+      },
+      {
+        "path": "data/cases/bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p05_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 99,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 2266
+      }
+    ],
+    "series": {
+      "n_frames": 4000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0016803659935283686,
+      "time_min_s": 5.66
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "741c15a184b3918181878e25ac9acc71ede51dd818954baf3e82520580c457f8",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20.tar",
+    "archive_bytes": 33237155840,
+    "files": [
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "bytes": 438
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "bytes": 264
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/time_series.tsv",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/analysis/time_series.tsv",
+        "bytes": 4395423
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "bytes": 359
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "bytes": 837
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0002953543593170612,
+      "time_min_s": 16.07
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "c914b248da8583a626b01eb7af92f70f7c9152cf5fbaf365762fb2b2ef3c9506",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 33386567680,
+    "files": [
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 4386866
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 837
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/fluid_profile_1.5.csv",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/1.5/U",
+        "derivation": "32x32 horizontal arithmetic mean, 16 vertical layers"
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/fluid_profile_28.5.csv",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/28.5/U",
+        "derivation": "32x32 horizontal arithmetic mean, 16 vertical layers"
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t16.7.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "frame_index": 139,
+        "requested_time_s": 16.7,
+        "actual_time_s": 16.7,
+        "row_count": 5422
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 5422
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t0.005.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "frame_index": 0,
+        "requested_time_s": 0.005,
+        "actual_time_s": 0.005,
+        "row_count": 5422
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t10.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 10.0,
+        "actual_time_s": 10.0,
+        "row_count": 5422
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t28.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 28.0,
+        "actual_time_s": 28.0,
+        "row_count": 5422
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 5422
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.00031337371101093246,
+      "time_min_s": 16.7
+    }
+  },
+  {
+    "case": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 29136936960,
+    "files": [
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 4283880
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 837
+      },
+      {
+        "path": "cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t7.87.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "frame_index": 173,
+        "requested_time_s": 7.869999999999999,
+        "actual_time_s": 7.869999999999999,
+        "row_count": 4533
+      },
+      {
+        "path": "data/cases/bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p1_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 4533
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0016190945758358661,
+      "time_min_s": 7.869999999999999
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "0abd10a73a98db39b43bc0bc92ccfb1d2cff6b2f4658a0ad6d130a4137ac2690",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20.tar",
+    "archive_bytes": 29956945920,
+    "files": [
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "bytes": 438
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "bytes": 264
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/time_series.tsv",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/analysis/time_series.tsv",
+        "bytes": 4404624
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "bytes": 359
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.00012974795372756778,
+      "time_min_s": 15.139999999999999
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "44fb9e7a53902ee0a4f86db07d26629960017578103398178077ee7b6a85b7c7",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 30456442880,
+    "files": [
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 979607
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t9.205.npz",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5",
+        "frame_index": 40,
+        "requested_time_s": 9.205,
+        "actual_time_s": 9.205,
+        "row_count": 10843
+      },
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 10843
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -6.666628103644363e-05,
+      "time_min_s": 9.205
+    },
+    "archived_table_summary": {
+      "n_frames": 1800,
+      "time_end_s": 9.0,
+      "dz_min_m": -6.630426180937376e-05,
+      "time_min_s": 8.834999999999999
+    },
+    "height_derivation": {
+      "method": "Unweighted species mean of stored particle-center z; type 1 small, type 2 large; physical time timestep*1e-7; all recorded frames, sorted by time",
+      "archive_members": [
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t10_to_11/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t11_to_12/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t14_to_15/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t15_to_16/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t17_to_18/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t18_to_19/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t19_to_20/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t1_to_2/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t20_to_21/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t21_to_22/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t22_to_23/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t23_to_24/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t24_to_25/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t25_to_26/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t26_to_27/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t28_to_29/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t29_to_30/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t2_to_3/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t30_to_31/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t31_to_32/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t32_to_33/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t33_to_34/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t34_to_35/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t35_to_36/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t36_to_37/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t37_to_38/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t38_to_39/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t3_to_4/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t4_to_5/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t6_to_7/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "bne_vf0p2_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5"
+      ]
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "4f9de5af853ab8f21fcc0207ebc7a1b61afab1779e083ac2a237e5c586896096",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    },
+    "legacy_table_sha256": "4f9de5af853ab8f21fcc0207ebc7a1b61afab1779e083ac2a237e5c586896096"
+  },
+  {
+    "case": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 27058421760,
+    "files": [
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 4311593
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t12.21.npz",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "frame_index": 41,
+        "requested_time_s": 12.209999999999999,
+        "actual_time_s": 12.209999999999999,
+        "row_count": 9066
+      },
+      {
+        "path": "data/cases/bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p2_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 9066
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0014425249975446427,
+      "time_min_s": 12.209999999999999
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "be25897b7fe0280ef70396c024941f6947bca32501ac7d83ce041cf90d17ce8f",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20.tar",
+    "archive_bytes": 76906403840,
+    "files": [
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "bytes": 438
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "bytes": 264
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/time_series.tsv",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/analysis/time_series.tsv",
+        "bytes": 761211
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "bytes": 359
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "bytes": 838
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.00015876308848205168,
+      "time_min_s": 14.29
+    },
+    "archived_table_summary": {
+      "n_frames": 1400,
+      "time_end_s": 7.0,
+      "dz_min_m": -0.000135891192909928,
+      "time_min_s": 7.0
+    },
+    "height_derivation": {
+      "method": "Unweighted species mean of stored particle-center z; type 1 small, type 2 large; physical time timestep*1e-7; all recorded frames, sorted by time",
+      "archive_members": [
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t10_to_11/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t11_to_12/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t14_to_15/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t15_to_16/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t17_to_18/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t18_to_19/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t19_to_20/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t1_to_2/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t20_to_21/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t21_to_22/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t22_to_23/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t23_to_24/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t24_to_25/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t25_to_26/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t26_to_27/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t28_to_29/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t29_to_30/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t2_to_3/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t30_to_31/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t31_to_32/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t32_to_33/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t33_to_34/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t34_to_35/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t35_to_36/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t36_to_37/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t37_to_38/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t38_to_39/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t3_to_4/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t4_to_5/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t6_to_7/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5"
+      ]
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "c3c09a35999340416de8d8828d72621f81f347799ff97565b9c7a8ab029abf58",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    },
+    "legacy_table_sha256": "c3c09a35999340416de8d8828d72621f81f347799ff97565b9c7a8ab029abf58"
+  },
+  {
+    "case": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 76960890880,
+    "files": [
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 3934091
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 838
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t7.14.npz",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "frame_index": 27,
+        "requested_time_s": 7.14,
+        "actual_time_s": 7.14,
+        "row_count": 16265
+      },
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 16265
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -9.060614024289327e-05,
+      "time_min_s": 7.14
+    },
+    "archived_table_summary": {
+      "n_frames": 7200,
+      "time_end_s": 36.0,
+      "dz_min_m": -9.060614024289327e-05,
+      "time_min_s": 7.14
+    },
+    "height_derivation": {
+      "method": "Unweighted species mean of stored particle-center z; type 1 small, type 2 large; physical time timestep*1e-7; all recorded frames, sorted by time",
+      "archive_members": [
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t10_to_11/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t11_to_12/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t14_to_15/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t15_to_16/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t17_to_18/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t18_to_19/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t19_to_20/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t1_to_2/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t20_to_21/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t21_to_22/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t22_to_23/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t23_to_24/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t24_to_25/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t25_to_26/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t26_to_27/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t28_to_29/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t29_to_30/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t2_to_3/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t30_to_31/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t31_to_32/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t32_to_33/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t33_to_34/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t34_to_35/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t35_to_36/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t36_to_37/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t37_to_38/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t38_to_39/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t3_to_4/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t4_to_5/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t6_to_7/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "bne_vf0p3_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5"
+      ]
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "eb7f28b1a7eb8db895d72e8b64e14292656b6f3c085565eb9b16dfeb3dfc2465",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    },
+    "legacy_table_sha256": "eb7f28b1a7eb8db895d72e8b64e14292656b6f3c085565eb9b16dfeb3dfc2465"
+  },
+  {
+    "case": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 64955811840,
+    "files": [
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/g",
+        "bytes": 253
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 4343174
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 838
+      },
+      {
+        "path": "cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t13.4.npz",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "frame_index": 79,
+        "requested_time_s": 13.399999999999999,
+        "actual_time_s": 13.399999999999999,
+        "row_count": 13598
+      },
+      {
+        "path": "data/cases/bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p3_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 13598
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0008493048343752383,
+      "time_min_s": 13.399999999999999
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "965fb004ec3b0edd0c8786989988d450b92a27e31c6045a1a0f72f9ccd487f33",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20.tar",
+    "archive_bytes": 47240458240,
+    "files": [
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/decomposeParDict",
+        "bytes": 157
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/system/fvOptions",
+        "bytes": 438
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/g",
+        "bytes": 264
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/time_series.tsv",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/analysis/time_series.tsv",
+        "bytes": 430919
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/in.liggghts_variable",
+        "bytes": 359
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -4.84092921365256e-05,
+      "time_min_s": 14.75
+    },
+    "archived_table_summary": {
+      "n_frames": 800,
+      "time_end_s": 4.0,
+      "dz_min_m": -1.5739862568440576e-05,
+      "time_min_s": 4.0
+    },
+    "height_derivation": {
+      "method": "Unweighted species mean of stored particle-center z; type 1 small, type 2 large; physical time timestep*1e-7; all recorded frames, sorted by time",
+      "archive_members": [
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t10_to_11/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t11_to_12/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t14_to_15/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t15_to_16/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t17_to_18/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t18_to_19/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t19_to_20/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t1_to_2/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t20_to_21/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t21_to_22/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t22_to_23/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t23_to_24/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t24_to_25/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t25_to_26/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t26_to_27/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t28_to_29/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t29_to_30/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t2_to_3/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t30_to_31/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t31_to_32/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t32_to_33/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t33_to_34/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t34_to_35/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t35_to_36/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t36_to_37/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t37_to_38/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t38_to_39/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t3_to_4/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t4_to_5/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t6_to_7/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang20/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5"
+      ]
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "728bc05a3cd749d9ffea50c34f4147ce8bba2ab2a033e0e58a757ca8372370a5",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    },
+    "legacy_table_sha256": "728bc05a3cd749d9ffea50c34f4147ce8bba2ab2a033e0e58a757ca8372370a5"
+  },
+  {
+    "case": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 45960816640,
+    "files": [
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 429635
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t9.795.npz",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5",
+        "frame_index": 158,
+        "requested_time_s": 9.795,
+        "actual_time_s": 9.795,
+        "row_count": 21687
+      },
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 21687
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": 2.1686890512078935e-06,
+      "time_min_s": 9.795
+    },
+    "archived_table_summary": {
+      "n_frames": 800,
+      "time_end_s": 4.0,
+      "dz_min_m": 9.57936333325542e-06,
+      "time_min_s": 4.0
+    },
+    "height_derivation": {
+      "method": "Unweighted species mean of stored particle-center z; type 1 small, type 2 large; physical time timestep*1e-7; all recorded frames, sorted by time",
+      "archive_members": [
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t0_to_1/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t10_to_11/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t11_to_12/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t12_to_13/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t13_to_14/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t14_to_15/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t15_to_16/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t17_to_18/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t18_to_19/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t19_to_20/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t1_to_2/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t20_to_21/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t21_to_22/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t22_to_23/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t23_to_24/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t24_to_25/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t25_to_26/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t26_to_27/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t27_to_28/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t28_to_29/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t29_to_30/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t2_to_3/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t30_to_31/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t31_to_32/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t32_to_33/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t33_to_34/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t34_to_35/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t35_to_36/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t36_to_37/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t37_to_38/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t38_to_39/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t3_to_4/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t4_to_5/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t5_to_6/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t6_to_7/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t7_to_8/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t8_to_9/forcebalance.h5",
+        "bne_vf0p4_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t9_to_10/forcebalance.h5"
+      ]
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "6b767d8580e3dfe95c12d142c233b35c85b09dcb546ae14831d99222ced425ff",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    },
+    "legacy_table_sha256": "6b767d8580e3dfe95c12d142c233b35c85b09dcb546ae14831d99222ced425ff"
+  },
+  {
+    "case": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30.tar",
+    "archive_bytes": 40824678400,
+    "files": [
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/time_series.tsv",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/analysis/time_series.tsv",
+        "bytes": 4337580
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_resume",
+        "bytes": 1820
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_init",
+        "bytes": 1367
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_setting",
+        "bytes": 846
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/in.liggghts_variable",
+        "bytes": 348
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parCFDDEMrun.sh",
+        "bytes": 2864
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/parDEMrun.sh",
+        "bytes": 985
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/case_params.json",
+        "bytes": 851
+      },
+      {
+        "path": "cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": [
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t16.515.npz",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t16_to_17/forcebalance.h5",
+        "frame_index": 102,
+        "requested_time_s": 16.515,
+        "actual_time_s": 16.515,
+        "row_count": 18131
+      },
+      {
+        "path": "data/cases/bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/snapshots/t40.npz",
+        "archive_member": "bne_vf0p4_rs100um_rl600um_rho2470_cor0p1_mu0p5_ang30/DEM/post/forcebalance_segments/t39_to_40/forcebalance.h5",
+        "frame_index": 199,
+        "requested_time_s": 40.0,
+        "actual_time_s": 40.0,
+        "row_count": 18131
+      }
+    ],
+    "series": {
+      "n_frames": 8000,
+      "time_end_s": 40.0,
+      "dz_min_m": -0.0005833939315955309,
+      "time_min_s": 16.515
+    },
+    "tabular_selection": {
+      "preserved_columns": [
+        "time",
+        "dem_timestep",
+        "count_small",
+        "count_large",
+        "z_mean_small",
+        "z_mean_large",
+        "z_gap_large_minus_small"
+      ],
+      "original_sha256": "ff8115b4ac8f16843d97b71110742cd4ccd6c21b31a8a72656f3f060cdf77206",
+      "selection": "unchanged numeric strings, unneeded derived columns omitted"
+    }
+  },
+  {
+    "case": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1.tar",
+    "archive_bytes": 38367416320,
+    "files": [
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "bytes": 273
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "bytes": 1697
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "bytes": 1362
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "bytes": 967
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "bytes": 385
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "bytes": 2000
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "bytes": 1728
+      },
+      {
+        "path": "cases/mech_baseline_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "archive_member": "mech_baseline_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": []
+  },
+  {
+    "case": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1.tar",
+    "archive_bytes": 41322700800,
+    "files": [
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "bytes": 425
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "bytes": 276
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "bytes": 1697
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "bytes": 1362
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "bytes": 967
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "bytes": 394
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "bytes": 1999
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "bytes": 1722
+      },
+      {
+        "path": "cases/mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "archive_member": "mech_settling_only_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": []
+  },
+  {
+    "case": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1.tar",
+    "archive_bytes": 42197964800,
+    "files": [
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "bytes": 1223
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "bytes": 413
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "bytes": 261
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "bytes": 1697
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "bytes": 1362
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "bytes": 967
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "bytes": 371
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "bytes": 1990
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "bytes": 1716
+      },
+      {
+        "path": "cases/mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "archive_member": "mech_shear_only_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": []
+  },
+  {
+    "case": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1",
+    "archive": "/mnt/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1.tar",
+    "archive_bytes": 53595484160,
+    "files": [
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSolution",
+        "bytes": 1603
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/controlDict",
+        "bytes": 1222
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/decomposeParDict",
+        "bytes": 156
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvSchemes",
+        "bytes": 1285
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/blockMeshDict",
+        "bytes": 812
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/system/fvOptions",
+        "bytes": 427
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Ksl",
+        "bytes": 1059
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/p",
+        "bytes": 488
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/voidfraction",
+        "bytes": 1228
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/U",
+        "bytes": 556
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/Us",
+        "bytes": 1028
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/0/rho",
+        "bytes": 1038
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/liggghtsCommands",
+        "bytes": 1190
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/g",
+        "bytes": 279
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/turbulenceProperties",
+        "bytes": 1133
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/couplingProperties",
+        "bytes": 2232
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/RASProperties",
+        "bytes": 935
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/CFD/constant/transportProperties",
+        "bytes": 751
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/check_force_balance.py",
+        "bytes": 18933
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_resume",
+        "bytes": 1695
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_init",
+        "bytes": 1362
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_setting",
+        "bytes": 1176
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/DEM/in.liggghts_variable",
+        "bytes": 385
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/parCFDDEMrun.sh",
+        "bytes": 2980
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/parDEMrun.sh",
+        "bytes": 1073
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/case_params.json",
+        "bytes": 2053
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/metadata.json",
+        "bytes": 1770
+      },
+      {
+        "path": "cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "archive_member": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1/Allrun.sh",
+        "bytes": 578
+      }
+    ],
+    "snapshots": []
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "A_RBNE": 7.972687735727495e-05,
+  "R_BNE": 2.281113867505436e-05,
+  "case_name": "mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1",
+  "case_path": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/cases/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1",
+  "control_type": "equal_settling_stokes",
+  "csv_path": "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/mech_equal_settling_stokes_dS200_dL600_phi0p1_ang30_seed1_meanz.csv",
+  "dz0": -6.74857888858715e-05,
+  "dz_final": 0.000825647516958208,
+  "dz_min": -7.972687735727495e-05,
+  "early_slope": 3.1556820629454954e-05,
+  "n_frames": 8000,
+  "t_cross": 3.02,
+  "t_end": 40.0,
+  "t_min": 0.26999999999999996,
+  "t_start": 0.005
+}

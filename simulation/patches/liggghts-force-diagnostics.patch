@@ -1,0 +1,555 @@
+diff --git a/src/fix_cfd_coupling_force.cpp b/src/fix_cfd_coupling_force.cpp
+index 958be263..27b770ef 100644
+--- a/src/fix_cfd_coupling_force.cpp
++++ b/src/fix_cfd_coupling_force.cpp
+@@ -48,11 +48,17 @@
+ #include "memory.h"
+ #include "modify.h"
+ #include "comm.h"
++#include "force.h"
+ #include <cmath>
+ #include "vector_liggghts.h"
+ #include "mpi_liggghts.h"
+ #include "fix_cfd_coupling_force.h"
+ #include "fix_property_atom.h"
++#include "fix_contact_property_atom.h"
++#include "fix_contact_property_atom_wall.h"
++#include "pair_gran.h"
++#include "fix_wall_gran.h"
++#include "fix_mesh_surface.h"
+ 
+ using namespace LAMMPS_NS;
+ using namespace FixConst;
+@@ -63,6 +69,12 @@ FixCfdCouplingForce::FixCfdCouplingForce(LAMMPS *lmp, int narg, char **arg) : Fi
+     fix_coupling_(0),
+     fix_dragforce_(0),
+     fix_hdtorque_(0),
++    fix_fluidforce_(0),
++    fix_contactforce_(0),
++    fix_wallforce_(0),
++    fix_gradPforce_(0),
++    fix_viscforce_(0),
++    pair_gran_(0),
+     fix_dispersionTime_(0),
+     fix_dispersionVel_(0),
+     fix_UrelOld_(0),
+@@ -231,6 +243,8 @@ FixCfdCouplingForce::~FixCfdCouplingForce()
+ 
+ void FixCfdCouplingForce::post_create()
+ {
++    enable_pair_contactforce_storage();
++    enable_wall_contactforce_storage();
+     // register dragforce
+     if(!fix_dragforce_ && use_force_)
+     {
+@@ -249,6 +263,91 @@ void FixCfdCouplingForce::post_create()
+         fix_dragforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
+     }
+ 
++    if(!fix_fluidforce_)
++    {
++        const char* fixarg[11];
++        fixarg[0]="fluidforce";
++        fixarg[1]="all";
++        fixarg[2]="property/atom";
++        fixarg[3]="fluidforce";
++        fixarg[4]="vector";
++        fixarg[5]="yes";
++        fixarg[6]="no";
++        fixarg[7]="no";
++        fixarg[8]="0.";
++        fixarg[9]="0.";
++        fixarg[10]="0.";
++        fix_fluidforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
++    }
++
++    if(!fix_contactforce_)
++    {
++        const char* fixarg[11];
++        fixarg[0]="contactforce";
++        fixarg[1]="all";
++        fixarg[2]="property/atom";
++        fixarg[3]="contactforce";
++        fixarg[4]="vector";
++        fixarg[5]="yes";
++        fixarg[6]="no";
++        fixarg[7]="no";
++        fixarg[8]="0.";
++        fixarg[9]="0.";
++        fixarg[10]="0.";
++        fix_contactforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
++    }
++
++    if(!fix_wallforce_)
++    {
++        const char* fixarg[11];
++        fixarg[0]="wallforce";
++        fixarg[1]="all";
++        fixarg[2]="property/atom";
++        fixarg[3]="wallforce";
++        fixarg[4]="vector";
++        fixarg[5]="yes";
++        fixarg[6]="no";
++        fixarg[7]="no";
++        fixarg[8]="0.";
++        fixarg[9]="0.";
++        fixarg[10]="0.";
++        fix_wallforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
++    }
++
++    if(!fix_gradPforce_ && use_force_)
++    {
++        const char* fixarg[11];
++        fixarg[0]="gradPForce";
++        fixarg[1]="all";
++        fixarg[2]="property/atom";
++        fixarg[3]="gradPForce";
++        fixarg[4]="vector";
++        fixarg[5]="yes";
++        fixarg[6]="no";
++        fixarg[7]="no";
++        fixarg[8]="0.";
++        fixarg[9]="0.";
++        fixarg[10]="0.";
++        fix_gradPforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
++    }
++
++    if(!fix_viscforce_ && use_force_)
++    {
++        const char* fixarg[11];
++        fixarg[0]="viscForce";
++        fixarg[1]="all";
++        fixarg[2]="property/atom";
++        fixarg[3]="viscForce";
++        fixarg[4]="vector";
++        fixarg[5]="yes";
++        fixarg[6]="no";
++        fixarg[7]="no";
++        fixarg[8]="0.";
++        fixarg[9]="0.";
++        fixarg[10]="0.";
++        fix_viscforce_ = modify->add_fix_property_atom(11,const_cast<char**>(fixarg),style);
++    }
++
+     // register hydrodynamic torque
+     if(!fix_hdtorque_ && use_torque_)
+     {
+@@ -333,6 +432,11 @@ void FixCfdCouplingForce::pre_delete(bool unfixflag)
+ {
+     if(unfixflag && fix_dragforce_) modify->delete_fix("dragforce");
+     if(unfixflag && fix_hdtorque_) modify->delete_fix("hdtorque");
++    if(unfixflag && fix_fluidforce_) modify->delete_fix("fluidforce");
++    if(unfixflag && fix_contactforce_) modify->delete_fix("contactforce");
++    if(unfixflag && fix_wallforce_) modify->delete_fix("wallforce");
++    if(unfixflag && fix_gradPforce_) modify->delete_fix("gradPForce");
++    if(unfixflag && fix_viscforce_) modify->delete_fix("viscForce");
+ }
+ 
+ /* ---------------------------------------------------------------------- */
+@@ -348,6 +452,9 @@ int FixCfdCouplingForce::setmask()
+ 
+ void FixCfdCouplingForce::init()
+ {
++    pair_gran_ = static_cast<PairGran*>(force->pair_match("gran",1));
++    if(!pair_gran_) pair_gran_ = static_cast<PairGran*>(force->pair_match("gran_bubble",1));
++    if(!pair_gran_) pair_gran_ = static_cast<PairGran*>(force->pair_match("bubble",1));
+     // make sure there is only one fix of this style
+     if(modify->n_fixes_style(style) != 1)
+       error->fix_error(FLERR,this,"More than one fix of this style is not allowed");
+@@ -378,6 +485,8 @@ void FixCfdCouplingForce::init()
+ 
+     // values to come from OF
+     if(use_force_) fix_coupling_->add_pull_property("dragforce","vector-atom");
++    if(use_force_) fix_coupling_->add_pull_property("gradPForce","vector-atom");
++    if(use_force_) fix_coupling_->add_pull_property("viscForce","vector-atom");
+     if(use_torque_) fix_coupling_->add_pull_property("hdtorque","vector-atom");
+ 
+     if(use_stochastic_)
+@@ -412,34 +521,174 @@ void FixCfdCouplingForce::setup(int vflag)
+ 
+ /* ---------------------------------------------------------------------- */
+ 
++void FixCfdCouplingForce::enable_pair_contactforce_storage()
++{
++  pair_gran_ = static_cast<PairGran*>(force->pair_match("gran",1));
++  if(!pair_gran_) pair_gran_ = static_cast<PairGran*>(force->pair_match("gran_bubble",1));
++  if(!pair_gran_) pair_gran_ = static_cast<PairGran*>(force->pair_match("bubble",1));
++
++  if(pair_gran_)
++    pair_gran_->do_store_contact_forces_every(1);
++}
++
++/* ---------------------------------------------------------------------- */
++
++void FixCfdCouplingForce::enable_wall_contactforce_storage()
++{
++  const int n_wall_fixes = modify->n_fixes_style("wall/gran");
++
++  for(int ifix = 0; ifix < n_wall_fixes; ifix++)
++  {
++    FixWallGran *wall_fix = static_cast<FixWallGran*>(modify->find_fix_style("wall/gran",ifix));
++    if(wall_fix)
++      wall_fix->enable_store_force_contact_every(1);
++  }
++}
++
++/* ---------------------------------------------------------------------- */
++
++void FixCfdCouplingForce::capture_contactforce_snapshot()
++{
++  int *mask = atom->mask;
++  int nlocal = atom->nlocal;
++  double **contactforce = fix_contactforce_->array_atom;
++
++  if(!pair_gran_ || !pair_gran_->fix_contact_forces())
++    error->fix_error(FLERR,this,"Pure particle-particle contactforce output requires a granular pair style defined before this fix");
++
++  FixContactPropertyAtom *contactforces = pair_gran_->fix_contact_forces();
++
++  for (int i = 0; i < nlocal; i++)
++  {
++    vectorZeroize3D(contactforce[i]);
++
++    if (!(mask[i] & groupbit))
++      continue;
++
++    const int npartners = contactforces->n_partner(i);
++    for (int ip = 0; ip < npartners; ip++)
++    {
++      double *contact = contactforces->contacthistory(i,ip);
++      contactforce[i][0] += contact[0];
++      contactforce[i][1] += contact[1];
++      contactforce[i][2] += contact[2];
++    }
++  }
++}
++
++/* ---------------------------------------------------------------------- */
++
++void FixCfdCouplingForce::capture_wallforce_snapshot()
++{
++  int *mask = atom->mask;
++  int nlocal = atom->nlocal;
++  double **wallforce = fix_wallforce_->array_atom;
++
++  for (int i = 0; i < nlocal; i++)
++    vectorZeroize3D(wallforce[i]);
++
++  const int n_wall_fixes = modify->n_fixes_style("wall/gran");
++  if(n_wall_fixes == 0)
++    return;
++
++  for(int ifix = 0; ifix < n_wall_fixes; ifix++)
++  {
++    FixWallGran *wall_fix = static_cast<FixWallGran*>(modify->find_fix_style("wall/gran",ifix));
++    if(!wall_fix)
++      continue;
++
++    if(wall_fix->is_mesh_wall())
++    {
++      FixMeshSurface **mesh_list = wall_fix->mesh_list();
++      const int n_meshes = wall_fix->n_meshes();
++
++      for(int imesh = 0; imesh < n_meshes; imesh++)
++      {
++        FixContactPropertyAtomWall *wallcontacts = mesh_list[imesh] ? mesh_list[imesh]->meshforceContact() : 0;
++        if(!wallcontacts)
++          error->fix_error(FLERR,this,"Wallforce output requires wall/gran contact storage to be available for each mesh wall");
++
++        for (int i = 0; i < nlocal; i++)
++        {
++          if (!(mask[i] & groupbit))
++            continue;
++
++          const int npartners = wallcontacts->n_partner(i);
++          for (int ip = 0; ip < npartners; ip++)
++          {
++            double *contact = wallcontacts->contacthistory(i,ip);
++            wallforce[i][0] += contact[0];
++            wallforce[i][1] += contact[1];
++            wallforce[i][2] += contact[2];
++          }
++        }
++      }
++
++      continue;
++    }
++
++    FixContactPropertyAtomWall *wallcontacts = wall_fix->contactforce_fix();
++    if(!wallcontacts)
++      error->fix_error(FLERR,this,"Wallforce output requires wall/gran contact storage to be available for each primitive wall");
++
++    for (int i = 0; i < nlocal; i++)
++    {
++      if (!(mask[i] & groupbit))
++        continue;
++
++      const int npartners = wallcontacts->n_partner(i);
++      for (int ip = 0; ip < npartners; ip++)
++      {
++        double *contact = wallcontacts->contacthistory(i,ip);
++        wallforce[i][0] += contact[0];
++        wallforce[i][1] += contact[1];
++        wallforce[i][2] += contact[2];
++      }
++    }
++  }
++}
++
++/* ---------------------------------------------------------------------- */
++
+ void FixCfdCouplingForce::post_force(int)
+ {
+   double **f = atom->f;
+   double **torque = atom->torque;
+   int *mask = atom->mask;
+   int nlocal = atom->nlocal;
+-  double **dragforce = fix_dragforce_->array_atom;
+-  double **hdtorque = fix_hdtorque_->array_atom;
++  double **dragforce = (use_force_ && fix_dragforce_) ? fix_dragforce_->array_atom : 0;
++  double **hdtorque = (use_torque_ && fix_hdtorque_) ? fix_hdtorque_->array_atom : 0;
++  double **fluidforce = fix_fluidforce_->array_atom;
++
++  capture_contactforce_snapshot();
++  capture_wallforce_snapshot();
+ 
+   vectorZeroize3D(dragforce_total);
+   vectorZeroize3D(hdtorque_total);
+ 
+-  // add dragforce to force vector
+-  
+   for (int i = 0; i < nlocal; i++)
+   {
+     if (mask[i] & groupbit)
+     {
+-        if(use_force_)
+-        {
+-            vectorAdd3D(f[i],dragforce[i],f[i]);
+-            vectorAdd3D(dragforce_total,dragforce[i],dragforce_total);
+-        }
+-        if(use_torque_)
+-        {
+-            vectorAdd3D(torque[i],hdtorque[i],torque[i]);
+-            vectorAdd3D(hdtorque_total,hdtorque[i],hdtorque_total);
+-        }
++      if(use_force_)
++      {
++        vectorCopy3D(dragforce[i],fluidforce[i]);
++        vectorAdd3D(f[i],dragforce[i],f[i]);
++        vectorAdd3D(dragforce_total,dragforce[i],dragforce_total);
++      }
++      else
++      {
++        vectorZeroize3D(fluidforce[i]);
++      }
++      if(use_torque_)
++      {
++        vectorAdd3D(torque[i],hdtorque[i],torque[i]);
++        vectorAdd3D(hdtorque_total,hdtorque[i],hdtorque_total);
++      }
++    }
++    else
++    {
++      vectorZeroize3D(fluidforce[i]);
+     }
+   }
+ }
+diff --git a/src/fix_cfd_coupling_force.h b/src/fix_cfd_coupling_force.h
+index d1e2eaec..5ca80e48 100644
+--- a/src/fix_cfd_coupling_force.h
++++ b/src/fix_cfd_coupling_force.h
+@@ -73,11 +73,22 @@ class FixCfdCouplingForce : public Fix  {
+   void dont_use_force()
+   { use_force_ = false; }
+ 
++  void enable_pair_contactforce_storage();
++  void enable_wall_contactforce_storage();
++  void capture_contactforce_snapshot();
++  void capture_wallforce_snapshot();
++
+   double dragforce_total[3];
+   double hdtorque_total[3];
+   class FixCfdCoupling* fix_coupling_;
+   class FixPropertyAtom* fix_dragforce_;
+   class FixPropertyAtom* fix_hdtorque_; // hdtorque = hydrodynamic torque
++  class FixPropertyAtom* fix_fluidforce_;
++  class FixPropertyAtom* fix_contactforce_;
++  class FixPropertyAtom* fix_wallforce_;
++  class FixPropertyAtom* fix_gradPforce_;
++  class FixPropertyAtom* fix_viscforce_;
++  class PairGran* pair_gran_;
+ 
+   class FixPropertyAtom* fix_dispersionTime_;
+   class FixPropertyAtom* fix_dispersionVel_;
+diff --git a/src/fix_cfd_coupling_force_implicit.cpp b/src/fix_cfd_coupling_force_implicit.cpp
+index 447a2d08..d04eafcf 100644
+--- a/src/fix_cfd_coupling_force_implicit.cpp
++++ b/src/fix_cfd_coupling_force_implicit.cpp
+@@ -221,6 +221,7 @@ void FixCfdCouplingForceImplicit::post_create()
+ 
+ void FixCfdCouplingForceImplicit::pre_delete(bool unfixflag)
+ {
++    FixCfdCouplingForce::pre_delete(unfixflag);
+     if(unfixflag && fix_Ksl_) modify->delete_fix("Ksl");
+     if(unfixflag && fix_uf_) modify->delete_fix("uf");
+     if(unfixflag && fix_KslRotation_) modify->delete_fix("KslRotation");
+@@ -255,31 +256,38 @@ void FixCfdCouplingForceImplicit::post_force(int)
+   double *Ksl = fix_Ksl_->vector_atom;
+   double **uf = fix_uf_->array_atom;
+   double **dragforce = fix_dragforce_->array_atom;
++  double **fluidforce = fix_fluidforce_->array_atom;
+   double frc[3];
+ 
++  capture_contactforce_snapshot();
++  capture_wallforce_snapshot();
++
+   vectorZeroize3D(dragforce_total);
+   vectorZeroize3D(hdtorque_total);
+ 
+-  // add dragforce to force vector
+   for (int i = 0; i < nlocal; i++)
+   {
+     if (mask[i] & groupbit)
+     {
+-        // calc force
+-        if(!useCN_)  //calculate drag force and add if not using Crank-Nicolson
++        vectorZeroize3D(frc);
++
++        if(!useCN_)
+         {
+             vectorSubtract3D(uf[i],v[i],frc);
+             vectorScalarMult3D(frc,Ksl[i]);
+-
+             vectorAdd3D(f[i],frc,f[i]);
+-            vectorAdd3D(dragforce_total,frc,dragforce_total);
+         }
+ 
+-        // add other force
+-        vectorAdd3D(f[i],dragforce[i],f[i]);
++        vectorCopy3D(dragforce[i],fluidforce[i]);
++        if(!useCN_)
++            vectorAdd3D(fluidforce[i],frc,fluidforce[i]);
+ 
+-        // add up forces for post-proc
+-        vectorAdd3D(dragforce_total,dragforce[i],dragforce_total);
++        vectorAdd3D(f[i],dragforce[i],f[i]);
++        vectorAdd3D(dragforce_total,fluidforce[i],dragforce_total);
++    }
++    else
++    {
++        vectorZeroize3D(fluidforce[i]);
+     }
+   }
+ }
+@@ -301,7 +309,8 @@ void FixCfdCouplingForceImplicit::end_of_step()
+   int nlocal = atom->nlocal;
+   double *Ksl = fix_Ksl_->vector_atom;
+   double **uf = fix_uf_->array_atom;
+-  //double **dragforce = fix_dragforce_->array_atom;
++  double **dragforce = fix_dragforce_->array_atom;
++  double **fluidforce = fix_fluidforce_->array_atom;
+   double KslMDeltaT, deltaU;
+   double vN32[3];
+   double frc[3];
+@@ -346,8 +355,15 @@ void FixCfdCouplingForceImplicit::end_of_step()
+          // add force
+         vectorAdd3D(f[i],frc,f[i]);
+ 
++        vectorCopy3D(dragforce[i],fluidforce[i]);
++        vectorAdd3D(fluidforce[i],frc,fluidforce[i]);
++
+         // add up forces for post-proc
+-        vectorAdd3D(dragforce_total,frc,dragforce_total);
++        vectorAdd3D(dragforce_total,fluidforce[i],dragforce_total);
+      }
++    else
++    {
++        vectorZeroize3D(fluidforce[i]);
++    }
+   }
+ }
+diff --git a/src/fix_wall_gran.cpp b/src/fix_wall_gran.cpp
+index bc7f1374..181be7a9 100644
+--- a/src/fix_wall_gran.cpp
++++ b/src/fix_wall_gran.cpp
+@@ -415,7 +415,7 @@ void FixWallGran::post_create()
+           delete []wallforce_name;
+    }
+ 
+-   if(store_force_contact_ && 0 == meshwall_)
++   if(store_force_contact_ && 0 == meshwall_ && !fix_wallforce_contact_)
+    {
+         const char *fixarg[19];
+         char fixid[200],ownid[200];
+@@ -525,6 +525,55 @@ void FixWallGran::post_create()
+ 
+ /* ---------------------------------------------------------------------- */
+ 
++void FixWallGran::enable_store_force_contact_every(int every)
++{
++    if(every <= 0)
++        error->fix_error(FLERR,this,"store_force_contact_every must be > 0");
++
++    if(!store_force_contact_ || every < store_force_contact_every_)
++        store_force_contact_every_ = every;
++
++    store_force_contact_ = true;
++
++    if(meshwall_ == 0)
++    {
++        if(fix_wallforce_contact_)
++            return;
++
++        const char *fixarg[19];
++        char fixid[200],ownid[200];
++        sprintf(fixid,"contactforces_%s",id);
++        sprintf(ownid,"%s",id);
++        fixarg[0]=fixid;
++        fixarg[1]="all";
++        fixarg[2]="contactproperty/atom/wall";
++        fixarg[3]=fixid;
++        fixarg[4]="6";
++        fixarg[5]="fx";
++        fixarg[6]="0";
++        fixarg[7]="fy";
++        fixarg[8]="0";
++        fixarg[9]="fz";
++        fixarg[10]="0";
++        fixarg[11]="tx";
++        fixarg[12]="0";
++        fixarg[13]="ty";
++        fixarg[14]="0";
++        fixarg[15]="tz";
++        fixarg[16]="0";
++        fixarg[17]="primitive";
++        fixarg[18]=ownid;
++        modify->add_fix(19,const_cast<char**>(fixarg));
++        fix_wallforce_contact_ = static_cast<FixContactPropertyAtomWall*>(modify->find_fix_id(fixid));
++        return;
++    }
++
++    for(int i = 0; i < n_FixMesh_; i++)
++        FixMesh_list_[i]->createMeshforceContact();
++}
++
++/* ---------------------------------------------------------------------- */
++
+ void FixWallGran::pre_delete(bool unfixflag)
+ {
+     if(unfixflag && store_force_)
+diff --git a/src/fix_wall_gran.h b/src/fix_wall_gran.h
+index 405c5598..4bb480ca 100644
+--- a/src/fix_wall_gran.h
++++ b/src/fix_wall_gran.h
+@@ -142,6 +142,11 @@ class FixWallGran : public Fix, public LIGGGHTS::IContactHistorySetup {
+   inline int store_force_contact_every() const
+   { return store_force_contact_every_; }
+ 
++  void enable_store_force_contact_every(int every);
++
++  inline class FixContactPropertyAtomWall *contactforce_fix() const
++  { return fix_wallforce_contact_; }
++
+   inline bool store_force_contact_stress() const
+   { return store_force_contact_stress_; }
+ 

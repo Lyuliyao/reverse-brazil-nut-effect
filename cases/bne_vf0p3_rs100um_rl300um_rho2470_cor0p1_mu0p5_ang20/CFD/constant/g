@@ -1,0 +1,10 @@
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class uniformDimensionedVectorField;
+    location "constant";
+    object g;
+}
+dimensions      [0 1 -2 0 0 0 0];
+value           (3.35042932401825 0 -9.20522891321876);   // 20 deg: (g sin(theta), 0, -g cos(theta))
