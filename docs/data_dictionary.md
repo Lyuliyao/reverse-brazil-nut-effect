@@ -55,7 +55,7 @@ the bundled canonical time series.
 
 ## Experimental panels and reference assets
 
-`data/experiments/manifest.json` maps each JPEG panel to its figure number,
+`data/experiments/manifest.json` maps each image panel to its figure number,
 panel letter, one-based PDF page, image XObject, and SHA-256 checksum.
 `paper/figure_assets/manifest.json` identifies the numerical figure images
 embedded in the final manuscript. Their pixels preserve the manuscript's

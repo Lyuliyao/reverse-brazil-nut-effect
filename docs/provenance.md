@@ -56,5 +56,5 @@ software, and campaigns outside the paper's scope. Extraction tools are kept
 under `scripts/` for use where those source archives are available.
 
 Full experimental videos are outside this curated bundle. The included
-experimental JPEGs are the precise panels embedded in the final manuscript,
+experimental images are the precise panels embedded in the final manuscript,
 and their panel mapping is the record of what is shared here.
