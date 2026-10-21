@@ -1,15 +1,27 @@
 #!/usr/bin/env python3
+"""Generate the parameter-sweep CFD-DEM cases (Figures 6-9).
+
+Reference implementation used to create the archived cases in cases/. Paths are
+taken from the environment: RBNE_CAMPAIGN_ROOT (output root; default runs/sweep)
+and RBNE_BASE_CASE (a fully populated template case to copy CFD/DEM inputs from;
+default: the bundled canonical case).
+"""
 import csv
 import json
 import math
+import os
 import re
 import shutil
 from pathlib import Path
 
 
-CAMPAIGN_ROOT = Path("/anvil/scratch/x-lyuliyao/CFDEM_PROJECT/brazil_nut_campaign_20260409")
+REPO_ROOT = Path(__file__).resolve().parents[2]
+CAMPAIGN_ROOT = Path(os.environ.get("RBNE_CAMPAIGN_ROOT", REPO_ROOT / "runs" / "sweep"))
 CASES_ROOT = CAMPAIGN_ROOT / "cases"
-BASE_CASE = Path("/anvil/scratch/x-lyuliyao/CFDEM_PROJECT/tmp/CASE_restitution_low_volume_0.05_empty_test33_collusion")
+BASE_CASE = Path(os.environ.get(
+    "RBNE_BASE_CASE",
+    REPO_ROOT / "cases" / "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+))
 MANIFEST_PATH = CAMPAIGN_ROOT / "case_manifest.csv"
 MANIFEST_FIELDNAMES = [
     "case_name",

@@ -1,5 +1,5 @@
 """
-Force-balance mechanism figure for the canonical CFD-DEM case
+Figure 9 — force-balance diagnostics for the canonical CFD-DEM case
 (d_L = 600 um, d_S = 200 um, rho_p = 2470, phi = 0.10, alpha = 30 deg,
 cor = 0.1, mu = 0.5).
 
@@ -9,11 +9,11 @@ Layout: 1 row x 3 cols sharing x-axis (time)
    (C) <fz_fluid excess> / W' per particle, per species -- fluid force
 
 Phase boundaries t1, t2 are taken from zero crossings of (z_L - z_S)
-(matching Fig 4/6 conventions). Interval labels above panel A name the
+(same convention as Figures 6-8). Interval labels above panel A name the
 states directly: RBNE phase = [t1, t2], BNE phase = after t2 (the narrow
 mixed crossover at t2 is not labelled).
 
-Reads time_series.tsv directly; all needed columns are present.
+Reads the canonical case's time_series.tsv.
 """
 import os
 from pathlib import Path
@@ -24,7 +24,7 @@ import json
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-# Font sizes chosen so the PRINTED size matches Fig 4 (fig_sim1_canonical_v2):
+# Font sizes chosen so the printed size matches Figure 6:
 # this figure renders ~12.5 in wide and is inserted at 0.9\linewidth
 # (jfm.cls textwidth = 32pc = 5.31 in), so printed = pt x 0.38.
 mpl.rcParams.update({
@@ -61,7 +61,7 @@ W_S = (RHOP - RHOF) * V_S * GZ
 W_L = (RHOP - RHOF) * V_L * GZ
 
 # colors — IDENTICAL to the OVITO-style snapshot rasterizer used in
-# fig_sim1/2/3, so the line colour for "small" (blue) and "large" (orange)
+# Figures 6-8, so the line colour for "small" (blue) and "large" (orange)
 # matches what the reader sees in the snapshots.
 C_S = (0.27, 0.41, 0.78)            # small  royal blue
 C_L = (0.93, 0.55, 0.40)            # large  warm coral / peach
@@ -81,7 +81,7 @@ nL    = ts["count_large"].to_numpy()
 # (analyze_bne_case.py uses np.mean). Normalize by submerged weight W'.
 # fz_fluid in the CFDEM output includes the pressure-gradient force,
 # which contains the hydrostatic (buoyancy) component +rho_f V g_z.
-# Subtract it so panel (D) shows the genuine hydrodynamic excess
+# Subtract it so panel (C) shows the genuine hydrodynamic excess
 # (drag + viscous + dynamic-pressure-gradient) -- in pure terminal
 # settling this excess equals +W' (drag balances submerged weight).
 buoy_S = RHOF * V_S * GZ           # > 0, upward (z-component of buoyancy)
@@ -161,7 +161,7 @@ def add_phase_lines(ax, label_phases=False):
 def plot_pair(ax, t, raw_L, raw_S, smooth_L, smooth_S,
               label_L, label_S):
     """Draw a (small, large) species pair: raw as thin transparent line,
-    smoothed bold on top. Smoothed is what reads at a glance."""
+    smoothed bold on top."""
     ax.plot(t, raw_L,    color=C_L, lw=0.6, alpha=0.30)
     ax.plot(t, raw_S,    color=C_S, lw=0.6, alpha=0.30)
     ax.plot(t, smooth_L, color=C_L, lw=2.2, label=label_L)

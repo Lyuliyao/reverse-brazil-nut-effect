@@ -1,5 +1,5 @@
 """
-Paper simulation figure 1 (v2) — canonical three-stage RBNE -> mixed -> BNE,
+Figure 6 — canonical three-phase evolution (RBNE -> mixed -> BNE),
 with horizontally averaged fluid-velocity profiles near t1 and t2.
 
 Layout
@@ -50,7 +50,7 @@ DEM_DT = 1.0e-7
 NX, NY, NZ = 32, 32, 16                  # CFD mesh (blockMeshDict)
 LZ_M = 0.005
 
-# Cúñez 2024 PNAS Fig.2-style palette: royal blue + warm peach/coral
+# species colours shared by Figures 6-10: royal blue (small), warm coral (large)
 C_S = np.array([0.27, 0.41, 0.78])   # small  royal blue
 C_L = np.array([0.93, 0.55, 0.40])   # large  warm coral / peach
 
@@ -364,7 +364,7 @@ def make_figure():
         "velocity_axis_mm_s": u_lim,
         "outputs": [out_pdf, out_png],
     }
-    with open(os.path.join(OUT, "fig_sim1_canonical_v2_metadata.json"),
+    with open(os.path.join(OUT, "figure06_metadata.json"),
               "w") as fjs:
         json.dump(meta, fjs, indent=2)
 

@@ -59,16 +59,13 @@ def verify_case(case_dir: Path, n_samples: int, rng: np.random.Generator) -> tup
         steps = g["dump_step"][...]
         segs = g["segment"].asstr()[...]
 
-    # row-count check: total tsv lines (minus 1 header each) == n_rows in h5
+    # Row-count check: total tsv rows (one header line per file) == n_rows in h5.
+    # Fast path assumes every file has the first file's bin count; if that does
+    # not match, fall back to an exact count over all files.
     total_tsv_rows = 0
-    # only sum line counts from sampled set + a fast estimate via first file's bin count
-    # to keep this cheap, assume all files share same bin count -> verify against first
     ref_rows = sum(1 for _ in open(tsvs[0][2])) - 1
-    # but bins per file may differ between cases, so count for THIS case using first file's count assumption,
-    # then we still verify per-sample rows below
     expected_total = ref_rows * len(tsvs)
     if expected_total != values.shape[0]:
-        # fall back to exact count
         actual = 0
         for _, _, f in tsvs:
             actual += sum(1 for _ in open(f)) - 1

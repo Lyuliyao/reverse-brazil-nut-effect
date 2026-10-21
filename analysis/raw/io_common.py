@@ -2,10 +2,9 @@
 """Shared I/O helpers for the CFD-DEM mechanism-isolation campaign analysis.
 
 This module centralises every assumption about on-disk data formats so that the
-individual analysis scripts (compute_mean_height_metrics.py, compute_vertical_flux.py,
-etc.) only deal with numpy arrays keyed by column name.
+individual analysis scripts (e.g. compute_mean_height_metrics.py) only deal with numpy arrays keyed by column name.
 
-Authoritative data-format notes (see campaign CLAUDE.md):
+Data-format notes:
 
 * metadata.json (per case dir) carries control_type, small_radius, large_radius,
   small_diameter_um, large_diameter_um, volfrac, angle_deg, rhop, rhof(=1000),
@@ -20,7 +19,7 @@ Authoritative data-format notes (see campaign CLAUDE.md):
   (the EXTENDED 32-column layout has vx vy vz; older runs have 29 columns
   without velocities -- this reader handles both).
 
-* CONTACT DATA (this campaign only) lives under DEM/post/contact_segments/<label>/
+* CONTACT DATA (mechanism-control cases only) lives under DEM/post/contact_segments/<label>/
   as `contact*.liggghts_local` (LIGGGHTS `dump local`).  The 13 columns, in
   order, are: id1 id2 periodicFlag fx fy fz fnx fny fnz delta cpx cpy cpz.
   fx,fy,fz is the pairwise contact force ON particle id1 FROM id2 (Newton 3rd:
@@ -29,7 +28,7 @@ Authoritative data-format notes (see campaign CLAUDE.md):
 
 The physical-time convention (parse_segment_time_label /
 physical_time_from_segment_timestep) is copied verbatim from
-brazil_nut/tools/analyze_bne_case.py so that frame times are consistent across
+analyze_bne_case.py so that frame times are consistent across
 the whole project.
 
 Only numpy + h5py + matplotlib + the standard library are used.
@@ -79,9 +78,8 @@ def read_metadata(case_dir):
 def case_box(metadata):
     """Return a box dict {xlo,xhi,ylo,yhi,zlo,zhi} from metadata['domain'].
 
-    Falls back to the campaign default domain (0..0.01, 0..0.01, 0..0.005) if
-    missing, and warns via the returned 'box_is_default' flag is NOT added --
-    callers can detect missing keys themselves.  Kept simple and defensive.
+    Missing or invalid entries fall back to the default simulation domain
+    (0..0.01, 0..0.01, 0..0.005) m.
     """
     domain = {}
     if isinstance(metadata, dict):
