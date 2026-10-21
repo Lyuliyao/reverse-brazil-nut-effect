@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate provenance/checksums.json for the research artifacts.
 
-Only the data, simulation inputs, manuscript and solver patches are
+Only the data, simulation inputs and solver patches are
 checksummed. Documentation and code are versioned by git and may be edited
 without touching the manifest. Run this after intentionally changing a file
 under one of the CHECKED prefixes, then commit the updated manifest.
@@ -13,7 +13,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CHECKED = ("data/", "cases/", "paper/", "simulation/patches/")
+CHECKED = ("data/", "cases/", "simulation/patches/")
 MANIFEST = ROOT / "provenance" / "checksums.json"
 
 

@@ -24,7 +24,7 @@ SOFTWARE.
 Scope: this license applies to the source code in analysis/, scripts/, and the
 Python and shell scripts in simulation/. It does not apply to:
 
-  * data, figures and the manuscript (data/, cases/, paper/, docs/images/),
+  * data and figures (data/, cases/, docs/images/),
     which are licensed under CC BY 4.0 -- see LICENSE-DATA;
   * simulation/patches/*.patch, which are modifications of OpenFOAM,
     CFDEMcoupling and LIGGGHTS and are distributed under the GNU General
