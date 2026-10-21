@@ -10,6 +10,7 @@ authors: &authors
   - family-names: Lyu
     given-names: Liyao
     affiliation: "Department of Mathematics, University of California, Los Angeles"
+    orcid: "https://orcid.org/0000-0003-2994-1464"
   - family-names: Ding
     given-names: Lingyun
     affiliation: "Department of Mathematics, University of California, Los Angeles"
@@ -23,6 +24,14 @@ authors: &authors
   - family-names: Bertozzi
     given-names: Andrea
     affiliation: "Department of Mathematics, University of California, Los Angeles"
+doi: "10.5281/zenodo.23532985"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23532985"
+    description: Zenodo concept DOI (all versions)
+  - type: doi
+    value: "10.5281/zenodo.23532986"
+    description: Zenodo DOI of version 1.0.0
 repository-code: "https://github.com/Lyuliyao/reverse-brazil-nut-effect"
 license:
   - MIT
@@ -35,7 +44,7 @@ keywords:
   - inclined plane
   - CFD-DEM
   - kinetic sieving
-version: "1.1.0"
+version: "1.0.0"
 date-released: "2026-10-21"
 preferred-citation:
   type: unpublished

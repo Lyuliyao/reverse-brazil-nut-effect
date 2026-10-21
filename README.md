@@ -9,6 +9,7 @@
 <br><sup>†</sup>Corresponding author
 
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey.svg)](#citation)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23532985.svg)](https://doi.org/10.5281/zenodo.23532985)
 [![Reproduce figures](https://github.com/Lyuliyao/reverse-brazil-nut-effect/actions/workflows/reproduce.yml/badge.svg)](https://github.com/Lyuliyao/reverse-brazil-nut-effect/actions/workflows/reproduce.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
@@ -207,6 +208,21 @@ If you use this code or data, please cite the paper:
   eprint        = {XXXX.XXXXX},
   archivePrefix = {arXiv},
   note          = {arXiv identifier to be added}
+}
+```
+
+To cite the code and data themselves, use the archived release on Zenodo
+([doi:10.5281/zenodo.23532985](https://doi.org/10.5281/zenodo.23532985); this DOI always resolves to the latest
+version, and each release also has its own version DOI):
+
+```bibtex
+@misc{lyu2026code,
+  title        = {Transient Reverse Brazil Nut Effect in Particle-Laden Inclined Flows: code and data},
+  author       = {Lyu, Liyao and Ding, Lingyun and Gu, Yifan and Ba, Yanming and Bertozzi, Andrea},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.23532985},
+  url          = {https://doi.org/10.5281/zenodo.23532985}
 }
 ```
 

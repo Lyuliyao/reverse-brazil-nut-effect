@@ -7,6 +7,8 @@
 <sup>1</sup>加州大学洛杉矶分校数学系 &nbsp;·&nbsp; <sup>2</sup>哈维穆德学院数学系
 <br><sup>†</sup>通讯作者
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23532985.svg)](https://doi.org/10.5281/zenodo.23532985)
+
 [English](README.md) | [简体中文](README.zh-CN.md)
 
 </div>
@@ -71,6 +73,19 @@ python scripts/reproduce_figures.py    # 图 6–10 输出到 outputs/figures/
   eprint        = {XXXX.XXXXX},
   archivePrefix = {arXiv},
   note          = {arXiv identifier to be added}
+}
+```
+
+引用代码与数据本身请使用 Zenodo 存档（[doi:10.5281/zenodo.23532985](https://doi.org/10.5281/zenodo.23532985)，该 DOI 始终指向最新版本）：
+
+```bibtex
+@misc{lyu2026code,
+  title        = {Transient Reverse Brazil Nut Effect in Particle-Laden Inclined Flows: code and data},
+  author       = {Lyu, Liyao and Ding, Lingyun and Gu, Yifan and Ba, Yanming and Bertozzi, Andrea},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.23532985},
+  url          = {https://doi.org/10.5281/zenodo.23532985}
 }
 ```
 
