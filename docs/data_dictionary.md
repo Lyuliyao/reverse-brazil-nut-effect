@@ -53,11 +53,9 @@ Only the mean-height columns are required for Figure 10.
 of the canonical mean heights from the packed particle records, used to check
 the bundled canonical time series.
 
-## Experimental panels and reference assets
+## Experimental panels
 
 `data/experiments/manifest.json` maps each image panel to its figure number,
-panel letter, one-based PDF page, image XObject, and SHA-256 checksum.
-`paper/figure_assets/manifest.json` identifies the numerical figure images
-embedded in the final manuscript. Their pixels preserve the manuscript's
-reference presentation; generated plots may differ slightly in font rendering
-between Python / Matplotlib versions.
+panel letter, page and image object in the manuscript, and SHA-256 checksum.
+Regenerated numerical figures may differ slightly from the published ones in
+font rendering between Python / Matplotlib versions.

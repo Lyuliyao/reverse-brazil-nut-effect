@@ -7,10 +7,10 @@ records refer to locations in that archive.
 
 ## Included sources
 
-- `paper/reverse_Brazil_nut_effect.pdf`: the manuscript PDF.
-- Experimental panels and numerical reference images: extracted from that
-  PDF's image objects; manifests identify figure, panel, PDF page, and checksum.
-- Figure 1 schematic: `paper/pic/diagram.pdf` in the source project.
+- Experimental panels: extracted from the image objects of the manuscript;
+  `data/experiments/manifest.json` identifies figure, panel, page, and checksum.
+- Figure 1 schematic (`docs/images/schematic.png`): rendered from the
+  manuscript's schematic drawing.
 - Figures 6–9 code: `CFDEM_PROJECT/brazil_nut/results/paper_figs/`.
 - Figure 10 code: adapted from the authors' development repository
   (commit `408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a`) to bundled paths.
@@ -46,7 +46,7 @@ utility to make a fresh runnable copy.
 ## Validation and retained archive
 
 `provenance/checksums.json` covers the research artifacts under `data/`,
-`cases/`, `paper/` and `simulation/patches/`. Documentation and code are
+`cases/` and `simulation/patches/`. Documentation and code are
 versioned by git and are not checksummed; after an intentional change to a
 checksummed file, run `python scripts/update_checksums.py` (CI runs it with
 `--check`).

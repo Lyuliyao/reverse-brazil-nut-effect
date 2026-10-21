@@ -8,7 +8,6 @@
 <sup>2</sup>Department of Mathematics, Harvey Mudd College
 <br><sup>†</sup>Corresponding author
 
-[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b.svg)](paper/reverse_Brazil_nut_effect.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey.svg)](#citation)
 [![Reproduce figures](https://github.com/Lyuliyao/reverse-brazil-nut-effect/actions/workflows/reproduce.yml/badge.svg)](https://github.com/Lyuliyao/reverse-brazil-nut-effect/actions/workflows/reproduce.yml)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
@@ -24,11 +23,11 @@ to reproduce the numerical results of the paper, together with the
 experimental image panels shown in the manuscript.
 
 <p align="center">
-  <img src="paper/figure_assets/figure06.jpg" width="92%"
+  <img src="docs/images/figure06.jpg" width="92%"
        alt="Canonical CFD–DEM simulation: well-mixed, RBNE, mixed and BNE phases, mean-height difference and fluid velocity profiles">
 </p>
 <p align="center"><em>
-Figure 6 of the paper. CFD–DEM simulation (d<sub>L</sub> = 600 µm,
+Figure 6 of the paper, regenerated with <code>analysis/figure06.py</code>. CFD–DEM simulation (d<sub>L</sub> = 600 µm,
 d<sub>S</sub> = 200 µm, φ = 0.10, α = 30°) passing from a well-mixed state
 through a transient RBNE phase and a mixed phase to the conventional BNE
 ordering.
@@ -123,7 +122,7 @@ A conda environment is provided as an alternative: `conda env create -f environm
 
 | Figure | Content | Script | Data |
 | :---: | --- | --- | --- |
-| 1 | Schematic of the inclined-plane flow | — | [`paper/figure_assets/figure01.pdf`](paper/figure_assets/figure01.pdf) |
+| 1 | Schematic of the inclined-plane flow | — | [`docs/images/schematic.png`](docs/images/schematic.png) |
 | 2–5 | Experimental side- and top-view observations | — | [`data/experiments/`](data/experiments/) (18 panels, see `manifest.json`) |
 | 6 | Canonical transient segregation and fluid velocity profiles | [`analysis/figure06.py`](analysis/figure06.py) | `data/cases/bne_vf0p1_…_ang30/` |
 | 7 | Effect of volume fraction φ and incline angle α | [`analysis/figure07.py`](analysis/figure07.py) | 10 sweep cases, d<sub>L</sub> = 600 µm |
@@ -131,9 +130,7 @@ A conda environment is provided as an alternative: `conda env create -f environm
 | 9 | Species mean heights, contact and drag forces | [`analysis/figure09.py`](analysis/figure09.py) | canonical case |
 | 10 | Mechanism-isolation controls | [`analysis/figure10.py`](analysis/figure10.py) | [`data/mechanisms/`](data/mechanisms/) |
 
-The figures as typeset in the manuscript are kept in
-[`paper/figure_assets/`](paper/figure_assets/) for side-by-side comparison
-with the regenerated output.
+The regenerated figures can be compared directly with those in the paper.
 
 **Mechanism-isolation controls (Figure 10).** Each control removes one
 ingredient from the canonical case:
@@ -160,8 +157,7 @@ and that the recovery to BNE is driven by kinetic sieving.
 │   ├── cases/           Per-case species mean-height time series, snapshots, fluid profiles
 │   ├── mechanisms/      Mean-height curves of the mechanism controls (Figure 10)
 │   └── experiments/     Experimental image panels of Figures 2–5
-├── docs/                Data dictionary and provenance notes
-├── paper/               Manuscript PDF and typeset figure assets
+├── docs/                Data dictionary, provenance notes and README images
 ├── provenance/          Checksums, source mapping and validation records
 ├── scripts/             validate_bundle.py, reproduce_figures.py, extraction helpers
 └── simulation/          Solver patches, case preparation and run scripts
@@ -220,7 +216,7 @@ Machine-readable metadata are in [`CITATION.cff`](CITATION.cff); GitHub's
 ## License
 
 - **Code** (`analysis/`, `scripts/`, `simulation/*.py`, `simulation/*.sh`): [MIT License](LICENSE).
-- **Data, figures and the manuscript** (`data/`, `cases/`, `paper/`, `docs/images/`): [Creative Commons Attribution 4.0 International](LICENSE-DATA).
+- **Data and figures** (`data/`, `cases/`, `docs/images/`): [Creative Commons Attribution 4.0 International](LICENSE-DATA).
 - **Solver patches** (`simulation/patches/*.patch`) modify OpenFOAM, CFDEMcoupling
   and LIGGGHTS. They are derivative works distributed under the GNU GPL terms of
   those projects (see [`simulation/patches/licenses/`](simulation/patches/licenses/)),

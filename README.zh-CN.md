@@ -15,7 +15,7 @@
 Flows* 的配套代码与数据，包括复现论文数值结果所需的分析脚本、CFD–DEM 算例输入、
 处理后的数据，以及论文中使用的实验图像面板。
 
-<p align="center"><img src="paper/figure_assets/figure06.jpg" width="92%"></p>
+<p align="center"><img src="docs/images/figure06.jpg" width="92%"></p>
 
 ## 研究内容
 
@@ -43,7 +43,7 @@ python scripts/reproduce_figures.py    # 图 6–10 输出到 outputs/figures/
 
 | 图 | 内容 | 脚本 |
 | :---: | --- | --- |
-| 1 | 斜面流示意图 | `paper/figure_assets/figure01.pdf` |
+| 1 | 斜面流示意图 | `docs/images/schematic.png` |
 | 2–5 | 实验侧视与俯视观测 | `data/experiments/`（18 个面板） |
 | 6 | 典型算例的瞬态分层与流体速度剖面 | `analysis/figure06.py` |
 | 7 | 体积分数 φ 与倾角 α 的影响 | `analysis/figure07.py` |
@@ -57,7 +57,7 @@ python scripts/reproduce_figures.py    # 图 6–10 输出到 outputs/figures/
 - `cases/`：15 个参数扫描算例与 4 个机制对照算例的输入
 - `data/`：平均高度时间序列、粒子快照、流体剖面、机制对照曲线、实验图像
 - `simulation/`：求解器补丁、算例准备与运行脚本（见 [simulation/README.md](simulation/README.md)）
-- `paper/`：论文 PDF 与排版图；`provenance/`：校验和与数据来源记录
+- `docs/`：数据说明、来源记录与 README 图片；`provenance/`：校验和与数据来源记录
 
 原始的 TB 级 CFD 场、完整粒子轨迹与实验视频不包含在本仓库中。
 
@@ -76,5 +76,5 @@ python scripts/reproduce_figures.py    # 图 6–10 输出到 outputs/figures/
 
 ## 许可
 
-代码采用 [MIT 许可](LICENSE)；数据、图像与论文采用 [CC BY 4.0](LICENSE-DATA)；
+代码采用 [MIT 许可](LICENSE)；数据与图像采用 [CC BY 4.0](LICENSE-DATA)；
 `simulation/patches/` 中针对 OpenFOAM、CFDEMcoupling、LIGGGHTS 的补丁沿用上游的 GPL 许可。
