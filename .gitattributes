@@ -1,0 +1,4 @@
+# Keep every file byte-identical across platforms. The data bundle is verified
+# with SHA-256 checksums (provenance/checksums.json); end-of-line conversion on
+# checkout (e.g. core.autocrlf=true on Windows) would otherwise break them.
+* -text

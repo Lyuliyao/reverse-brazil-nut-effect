@@ -1,6 +1,7 @@
-name: Check paper data and figures
+name: Reproduce paper figures
 on:
   push:
+  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,6 +14,17 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
+          cache: pip
       - run: python -m pip install -r requirements.txt
-      - run: python scripts/validate_bundle.py --report outputs/validation.json
-      - run: python scripts/reproduce_figures.py
+      - name: Verify data checksums are up to date
+        run: python scripts/update_checksums.py --check
+      - name: Validate data bundle
+        run: python scripts/validate_bundle.py --report outputs/validation.json
+      - name: Regenerate Figures 6-10
+        run: python scripts/reproduce_figures.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paper-figures
+          path: |
+            outputs/figures/
+            outputs/validation.json

@@ -1,18 +1,49 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying paper when using these code and data."
+message: "If you use this code or data, please cite the paper listed under preferred-citation."
 type: software
 title: "Transient Reverse Brazil Nut Effect in Particle-Laden Inclined Flows: code and data"
-authors:
+abstract: >-
+  Code, CFD-DEM simulation inputs and processed data reproducing the numerical
+  results of the paper "Transient Reverse Brazil Nut Effect in Particle-Laden
+  Inclined Flows", together with the experimental image panels of the manuscript.
+authors: &authors
   - family-names: Lyu
     given-names: Liyao
+    affiliation: "Department of Mathematics, University of California, Los Angeles"
   - family-names: Ding
     given-names: Lingyun
+    affiliation: "Department of Mathematics, University of California, Los Angeles"
+    email: dingly@g.ucla.edu
   - family-names: Gu
     given-names: Yifan
+    affiliation: "Department of Mathematics, University of California, Los Angeles"
   - family-names: Ba
     given-names: Yanming
+    affiliation: "Department of Mathematics, Harvey Mudd College"
   - family-names: Bertozzi
     given-names: Andrea
+    affiliation: "Department of Mathematics, University of California, Los Angeles"
 repository-code: "https://github.com/Lyuliyao/reverse-brazil-nut-effect"
-version: "1.0.0"
-date-released: "2026-10-03"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - Brazil nut effect
+  - reverse Brazil nut effect
+  - particle-laden flow
+  - size segregation
+  - inclined plane
+  - CFD-DEM
+  - kinetic sieving
+version: "1.1.0"
+date-released: "2026-10-21"
+preferred-citation:
+  type: unpublished
+  title: "Transient Reverse Brazil Nut Effect in Particle-Laden Inclined Flows"
+  authors: *authors
+  year: 2026
+  # Add the arXiv identifier once available, e.g.
+  # identifiers:
+  #   - type: other
+  #     value: "arXiv:XXXX.XXXXX"
+  #     description: arXiv preprint
