@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compute species mean-height time series and RBNE/BNE metrics for one case.
 
-Sign convention (project-wide): z is positive upward (wall-normal to the
+Sign convention: z is positive upward (wall-normal to the
 incline); dz = zbar_L - zbar_S.  dz < 0 means large particles are below small
 particles, i.e. transient RBNE.  dz > 0 is conventional BNE.
 
@@ -15,7 +15,7 @@ Outputs
     dz0, early_slope, A_RBNE, t_min, t_cross, dz_final, R_BNE, plus bookkeeping.
 
 t_cross is, by definition here, the FIRST frame time with dz >= 0 that occurs
-strictly AFTER t_min.  We never read any precomputed cross field from elsewhere.
+strictly AFTER t_min.
 
 This script does NOT require velocity or contact data: vz columns are reported
 when present but are not needed for the height metrics.

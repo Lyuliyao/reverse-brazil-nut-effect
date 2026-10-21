@@ -1,23 +1,20 @@
 """
-Paper figure: equal-settling (analytic Stokes) mechanism probe.
+Figure 10 — mechanism-isolation controls.
 
-Overlays Delta z_bar(t) = z_L_bar - z_S_bar for three runs of the canonical
-parameters (d_L = 600 um, d_S = 200 um, phi = 0.10, alpha = 30 deg; the
-mechanism-probe campaign realisation, seed 11000081):
+Overlays Delta z_bar(t) = z_L_bar - z_S_bar for four runs of the canonical
+parameters (d_L = 600 um, d_S = 200 um, phi = 0.10, alpha = 30 deg; a separate
+realisation from the Figure 6 case, insertion seed 11000081):
 
     baseline (full incline)   g = (g sin a, 0, -g cos a)
     settling-only             g_par = 0 (no downslope shear)
+    shear-only                g_perp = 0 (no wall-normal settling drive)
     equal-settling (Stokes)   full gravity + constant upward body force on
                               each large particle
                               F_add = W'_L [1-(d_S/d_L)^2] = (8/9) W'_L
                               = 1.278e-6 N, so the isolated-sphere Stokes
                               settling velocities of the two species coincide
 
-The legacy finite-concentration-fitted equal-settling variant is deliberately
-NOT shown (manuscript uses only the analytic Stokes definition).
-
-Reads the mechanism-campaign meanz CSVs (read-only); writes PNG+PDF here.
-The archived CSV data are included in data/mechanisms/.
+Reads data/mechanisms/*_meanz.csv and writes PNG and PDF to the output directory.
 """
 import csv
 import os
@@ -39,7 +36,7 @@ RESULTS = str(REPO / "data" / "mechanisms")
 OUT = str(OUTPUT)
 os.makedirs(OUT, exist_ok=True)
 
-# paper palette (matches Figs 4-7): royal blue / warm coral
+# palette shared with Figures 6-9: royal blue / warm coral
 C_S = (0.27, 0.41, 0.78)
 C_L = (0.93, 0.55, 0.40)
 
@@ -79,7 +76,7 @@ ymin = min(dz.min() for *_, dz in curves)
 ymax = max(dz.max() for *_, dz in curves)
 pad = 0.08 * (ymax - ymin)
 
-# RBNE / BNE bands, same semantics as Fig 4 panel E
+# RBNE / BNE bands, same convention as Figure 6E
 ax.axhspan(ymin - pad, 0.0, color=C_L, alpha=0.14, lw=0, zorder=0)
 ax.axhspan(0.0, ymax + pad, color=C_S, alpha=0.10, lw=0, zorder=0)
 ax.axhline(0.0, color="k", lw=0.6, zorder=1)

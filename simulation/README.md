@@ -69,9 +69,12 @@ allocation on a cluster.
 For Figure 10, choose one of the `mech_*_seed1` cases. The supplied
 `mech_equal_settling_stokes_*` input already contains its analytic body force.
 `tools/compute_equal_settling_addforce.py --help` explains the calculation.
-`reference/` retains the original campaign-generation implementation for
-provenance; these historical scripts include campaign-specific paths and
-options beyond the paper's selected cases.
+`reference/` contains the case generators that produced the archived inputs
+(`generate_bne_cases.py` for the sweep, `generate_mechanism_cases.py` for the
+controls). Their output and template locations are set with the environment
+variables `RBNE_CAMPAIGN_ROOT`, `RBNE_BASE_CASE` / `RBNE_TEMPLATE_CASE` (defaults:
+`runs/` and the bundled canonical case). They expose options beyond the
+paper's selected cases.
 
 Fresh runs can vary with the MPI partition, solver / compiler build, and
 insertion implementation. Use the bundled recorded data for direct

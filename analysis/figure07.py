@@ -1,13 +1,11 @@
 """
-Paper simulation figure 2 — effect of total volume fraction phi and
+Figure 7 — effect of total volume fraction phi and
 incline angle alpha on the transient RBNE -> BNE evolution.
 
 Fixed parameters: d_L = 600 um, d_S = 200 um, rho_p = 2470 kg/m^3,
                   cor = 0.1, mu = 0.5
 Scanned         : phi in {0.05, 0.10, 0.20, 0.30, 0.40}
                   alpha in {20, 30} deg
-                  (alpha = 10 deg runs were terminated early and are
-                  excluded by request)
 
 Layout: 3 rows x 5 columns
         row 1: peak-RBNE snapshot for alpha = 30 deg (canonical)
@@ -38,8 +36,6 @@ mpl.rcParams.update({
 })
 
 ROOT = str(REPO)
-SBATCH_C = str(CASES)
-SCR_C = str(CASES)
 OUT = str(OUTPUT)
 os.makedirs(OUT, exist_ok=True)
 
@@ -51,20 +47,18 @@ EPS_MM  = 0.10                             # |Delta z_bar| threshold for mixed (
 PHIS = [0.05, 0.10, 0.20, 0.30, 0.40]
 ALPHAS = [20, 30]
 
-# ---------- locate case directories across SBATCH and SCR ----------
+# ---------- locate bundled case directories ----------
 def case_dir(phi, alpha):
-    """Find the case directory for a given (phi, alpha) — searches
-    /mnt/home SBATCH first, then /mnt/scratch."""
-    name = f"bne_vf0p{int(round(phi*100)):02d}".replace("vf0p05", "vf0p05")
+    """Return the bundled data directory for a given (phi, alpha)."""
+    name = f"bne_vf0p{int(round(phi*100)):02d}"
     name = name.replace("vf0p10", "vf0p1")
     name = name.replace("vf0p20", "vf0p2")
     name = name.replace("vf0p30", "vf0p3")
     name = name.replace("vf0p40", "vf0p4")
     name = f"{name}_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang{alpha}"
-    for root in (SBATCH_C, SCR_C):
-        p = os.path.join(root, name)
-        if os.path.isdir(p):
-            return p
+    p = os.path.join(str(CASES), name)
+    if os.path.isdir(p):
+        return p
     raise FileNotFoundError(f"case not found: {name}")
 
 
@@ -156,9 +150,9 @@ for phi in PHIS:
               f"end dz={dz[-1]:+.3f} mm")
 
 # ---------------------- figure layout -------------------------------
-NCOL = len(PHIS)                              # 5
-# match Fig 1's 13-inch render width so font size on the printed page is
-# the same as Fig 1; height scales with the 3-row content
+NCOL = len(PHIS)
+# match Figure 6's 13-inch render width so font size on the printed page is
+# the same as in Figure 6; height scales with the 3-row content
 fig = plt.figure(figsize=(13.0, 5.6))
 gs  = fig.add_gridspec(
     nrows=3, ncols=NCOL,

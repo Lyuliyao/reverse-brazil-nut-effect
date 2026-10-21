@@ -1,19 +1,19 @@
 # Source provenance and scope
 
-The source research project was `/mnt/scratch/lyuliyao/CFDEM_NRE`.
-This repository was curated on 2026-10-03 around the final PDF supplied by the
-authors, without changing that PDF or running new physical simulations.
+All data in this repository were exported from the authors' original CFD–DEM
+research archive. No simulations
+were re-run to produce this repository; absolute paths that appear in the JSON
+records refer to locations in that archive.
 
 ## Included sources
 
-- `paper/reverse_Brazil_nut_effect.pdf`: exact author-supplied final PDF.
+- `paper/reverse_Brazil_nut_effect.pdf`: the manuscript PDF.
 - Experimental panels and numerical reference images: extracted from that
   PDF's image objects; manifests identify figure, panel, PDF page, and checksum.
 - Figure 1 schematic: `paper/pic/diagram.pdf` in the source project.
 - Figures 6–9 code: `CFDEM_PROJECT/brazil_nut/results/paper_figs/`.
-- Figure 10 code: `paper_figs/fig_sim5_equal_settling.py` at commit
-  `408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a` of the authors' existing
-  `Lyuliyao/cfdem_particle_ladden_flow` repository, adapted to bundled paths.
+- Figure 10 code: adapted from the authors' development repository
+  (commit `408f94f91d1c0bc8b8f8fa267b9d3b6507cc977a`) to bundled paths.
 - Figure 10 CSVs: `CFDEM_PROJECT/mechanism_campaign_20260611/analysis/results/`,
   including the analytic `equal_settling_stokes` control.
 - Sweep / canonical inputs, time series, and selected frames: the original

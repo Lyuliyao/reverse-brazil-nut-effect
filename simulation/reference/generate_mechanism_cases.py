@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Generate mechanism-isolation CFD-DEM cases for the transient-RBNE revision.
+"""Generate the mechanism-isolation CFD-DEM cases (Figure 10 controls).
 
-This is a SEPARATE campaign from the original `brazil_nut` campaign. It never
+These cases are generated separately from the parameter-sweep cases. It never
 overwrites existing cases (refuses to write into an existing case dir unless
 --force) and never rmtree's by default.
 
-Key differences from the original generator (per Codex Gate 0/0b):
+Differences from the parameter-sweep generator (generate_bne_cases.py):
   * Direct gravity components (gx, gy, gz) with the DEM `fix gravity` MAGNITUDE set to
     g_eff = sqrt(gx^2+gy^2+gz^2)  (LIGGGHTS normalizes the vector then scales by the
     magnitude; fix_gravity.cpp:379-397). OpenFOAM constant/g and fvOptions get the RAW
@@ -15,7 +15,7 @@ Key differences from the original generator (per Codex Gate 0/0b):
     (for contact-type decomposition F^z_{L<-S} vs F^z_{L<-L} and contact work/impulse).
   * Optional per-species vertical body force via `fix addforce` (equal-settling probe).
   * Parameterized insertion seeds (multi-seed; paired ICs reuse one restart per seed).
-  * Rich metadata.json (control type, g components, g_eff, seeds, codex gate id, ...).
+  * Rich metadata.json (control type, g components, g_eff, seeds, ...).
 
 Notation: case names/metadata record RADII (rs/rl, micron) AND diameters. The
 manuscript canonical d_L=600um corresponds to large RADIUS 300um (rl300).
@@ -37,17 +37,18 @@ import math
 import re
 import shutil
 import subprocess
+import os
 from pathlib import Path
 
 # --------------------------------------------------------------------------- #
-CAMPAIGN_ROOT = Path(__file__).resolve().parents[1]            # mechanism_campaign_20260611
+REPO_ROOT = Path(__file__).resolve().parents[2]
+CAMPAIGN_ROOT = Path(os.environ.get("RBNE_CAMPAIGN_ROOT", REPO_ROOT / "runs" / "mechanism"))
 CASES_ROOT = CAMPAIGN_ROOT / "cases"
-# Template = a known-good, fully-populated canonical case (base material, alpha=30, phi=0.10).
-TEMPLATE_CASE = Path(
-    "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_PROJECT/brazil_nut/cases/"
-    "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30"
-)
-CODEX_GATE_ID = "Gate0b:PRECHECK_OK(thread 019eb6cd)"
+# Template = a fully populated canonical case (base material, alpha=30, phi=0.10).
+TEMPLATE_CASE = Path(os.environ.get(
+    "RBNE_TEMPLATE_CASE",
+    REPO_ROOT / "cases" / "bne_vf0p1_rs100um_rl300um_rho2470_cor0p1_mu0p5_ang30",
+))
 
 G_MAG = 9.796
 DEM_TIMESTEP = 1.0e-7
@@ -373,8 +374,8 @@ def patch_controldict(text, end_time, write_interval, purge_write):
 
 def patch_coupling_ddt(text, mode, steps=None):
     """Insert `useDDTvoidfraction <mode>;` (a|b|c|off) after the modelType line. Off/None = solver
-    default (keyword absent -> cfdemCloud treats it as 'off'). Mode c (E1RA patched build ONLY,
-    Gate 55) additionally writes `ddtVoidfractionSteps <K>;` — the production solver FatalErrors
+    default (keyword absent -> cfdemCloud treats it as 'off'). Mode c (requires a locally patched solver build)
+    additionally writes `ddtVoidfractionSteps <K>;` — the production solver FatalErrors
     on mode c, which is the intended fail-closed behaviour."""
     if mode is None:
         return text
@@ -382,7 +383,7 @@ def patch_coupling_ddt(text, mode, steps=None):
     if mode == "c":
         if not steps or steps < 2:
             raise SystemExit("--ddt-voidfraction c requires --ddt-voidfraction-steps >= 2")
-        ins += f"\nddtVoidfractionSteps {steps};   // E1RA mode c: running-mean window (CFD steps)"
+        ins += f"\nddtVoidfractionSteps {steps};   // mode c: running-mean window (CFD steps)"
     if re.search(r"^\s*useDDTvoidfraction\b", text, flags=re.MULTILINE):
         text = re.sub(r"^\s*ddtVoidfractionSteps\s+\S+;.*$\n?", "", text, flags=re.MULTILINE)
         return re.sub(r"^\s*useDDTvoidfraction\s+\S+;.*$", ins, text, flags=re.MULTILINE)
@@ -409,7 +410,7 @@ def patch_coupling_debug(text, on):
     if not on:
         return text
     return re.sub(r'^(modelType\s+"[AB]"\s*;.*)$',
-                  lambda m: m.group(1) + "\ndebug on;   // O4 instrumentation: write ddtVoidfraction etc.",
+                  lambda m: m.group(1) + "\ndebug on;   // diagnostics: write ddtVoidfraction etc.",
                   text, count=1, flags=re.MULTILINE)
 
 
@@ -426,7 +427,7 @@ def patch_io_model(text, model):
     per-step writes)."""
     if model is None:
         return text
-    return re.sub(r"^IOModel\s+\S+;.*$", f'IOModel "{model}";   // O4: avoid global-path mkdir race', text,
+    return re.sub(r"^IOModel\s+\S+;.*$", f'IOModel "{model}";   // avoid global-path mkdir race', text,
                   count=1, flags=re.MULTILINE)
 
 
@@ -439,16 +440,16 @@ def patch_time_format(text, tfmt, tprec):
 
 
 SERIAL_PARCFDDEM = """#!/bin/bash
-# TWO-RANK coupled run (O4 diagnostics). Constraints (Codex Gate 51): OpenFOAM-6 aborts -parallel on
+# TWO-RANK coupled run (diagnostics). Constraints: OpenFOAM-6 aborts -parallel on
 # 1 rank (UPstream.C:110); CFDEM twoWayMPI has no MPI_Initialized guard (needs mpirun+-parallel); the
 # chain runner rewrites numberOfSubdomains from CFDEM_NPROCS. So: CFDEM_NPROCS=2 -> decomposePar (2) ->
 # mpirun -np 2 -parallel -> rc-checked reconstructPar -> only then rm processor*.
 # Written by generate_mechanism_cases.py --serial-cfddem; replaces the template parCFDDEMrun.sh.
-source "${CFDEM_ENV_SCRIPT:-/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/setup_cfdem_env.sh}" || { echo "env source FAILED"; exit 90; }
+source "${CFDEM_ENV_SCRIPT:?set CFDEM_ENV_SCRIPT to your CFDEM environment script}" || { echo "env source FAILED"; exit 90; }
 casePath="$(dirname "$(readlink -f ${BASH_SOURCE[0]})")"
 logfile="$casePath/log_run_parallel_cfdemSolverPiso_periodicChannel_CFDDEM"
 nprocs="${CFDEM_NPROCS:-2}"
-# ---- fail-closed binary/lib/rank assertions (Gate 56) ----
+# ---- fail-closed binary/lib/rank assertions ----
 if [ "$nprocs" != "2" ]; then echo "ABORT: CFDEM_NPROCS=$nprocs != 2" | tee -a "$logfile"; exit 91; fi
 SOLVER_BIN="$(command -v cfdemSolverPiso)" || { echo "ABORT: solver not on PATH" | tee -a "$logfile"; exit 92; }
 SOLVER_SHA=$(sha256sum "$SOLVER_BIN" | cut -d" " -f1)
@@ -512,17 +513,17 @@ SMOOTH_FIELD_V = SMOOTH_FIELD_S.replace("volScalarField", "volVectorField").repl
 
 
 def patch_coupling_smoothing(text, length):
-    """E2 control (Gate 55 design doc section 3): smoothingModel constDiffSmoothing with
+    """Optional voidfraction smoothing: smoothingModel constDiffSmoothing with
     smoothingLength <length> (m), lowerLimit 0.0, upperLimit 1.0. None = template unchanged.
-    NOTE: this smooths voidFractionNext BEFORE calcDdtVoidfraction — every model sees the
-    smoothed eps (recorded honestly in the design doc)."""
+    NOTE: this smooths voidFractionNext BEFORE calcDdtVoidfraction, so every model sees the
+    smoothed eps."""
     if length is None:
         return text
     new, n = re.subn(r"^smoothingModel\s+[^;]+;.*$",
-                     "smoothingModel constDiffSmoothing;   // E2 control", text,
+                     "smoothingModel constDiffSmoothing;   // voidfraction smoothing", text,
                      count=1, flags=re.MULTILINE)
     if n != 1:
-        raise SystemExit("smoothingModel line not found for E2 patch")
+        raise SystemExit("smoothingModel line not found for smoothing patch")
     props = ("\nconstDiffSmoothingProps\n{\n"
              "    lowerLimit 0.0;\n    upperLimit 1.0;\n"
              f"    smoothingLength {fmt(length)};\n}}\n")
@@ -622,15 +623,15 @@ def main():
     ap.add_argument("--purge-write", type=int, default=0, help="0 keeps all CFD writes (for J_rel)")
     ap.add_argument("--name", default=None, help="explicit case name override")
     ap.add_argument("--force", action="store_true")
-    # --- CFD-coupling controls (2026-08-23; defaults reproduce the existing cases byte-for-byte) ---
+    # --- CFD-coupling controls (defaults reproduce the archived cases byte-for-byte) ---
     ap.add_argument("--ddt-voidfraction", choices=["off", "a", "b", "c"], default=None,
-                    help="CFDEM useDDTvoidfraction: a = div(Us(1-eps)), b = ddt(eps), c = E1RA running mean (patched build only), off; default = keyword absent")
+                    help="CFDEM useDDTvoidfraction: a = div(Us(1-eps)), b = ddt(eps), c = running mean (patched build only), off; default = keyword absent")
     ap.add_argument("--ddt-voidfraction-steps", type=int, default=None,
                     help="mode c: running-mean window K in CFD steps (required with c)")
     ap.add_argument("--smoothing-length", type=float, default=None,
-                    help="E2 control: constDiffSmoothing smoothingLength (m); default = template smoothingModel off")
+                    help="voidfraction smoothing: constDiffSmoothing smoothingLength (m); default = template smoothingModel off")
     ap.add_argument("--env-script", default=None,
-                    help="bake this CFDEM env script path as the parCFDDEMrun.sh default (E1RA runs)")
+                    help="bake this CFDEM env script path as the parCFDDEMrun.sh default")
     ap.add_argument("--expect-solver-sha", default=None,
                     help="fail-closed: abort the node-side run unless the resolved cfdemSolverPiso sha256 matches")
     ap.add_argument("--expect-lib-sha", default=None,
@@ -640,14 +641,13 @@ def main():
     ap.add_argument("--alpha-min", type=float, default=None,
                     help="divided void-fraction model floor alphaMin (default: model default 0.1)")
     ap.add_argument("--cases-root", default=None, help="override the cases root (tests / scratch)")
-    ap.add_argument("--codex-gate", default=None, help="Codex gate id recorded in metadata")
     ap.add_argument("--coupling-debug", action="store_true", help="couplingProperties `debug on;` (writes ddtVoidfraction)")
     ap.add_argument("--write-precision", type=int, default=None, help="controlDict writePrecision (default template 6)")
     ap.add_argument("--io-model", default=None, help="couplingProperties IOModel; NOTE this build registers the no-op model as \"off\" (source dir noIO); default template basicIO")
     ap.add_argument("--time-format", default=None, choices=["general", "fixed", "scientific"])
     ap.add_argument("--time-precision", type=int, default=None)
     ap.add_argument("--serial-cfddem", action="store_true",
-                    help="replace parCFDDEMrun.sh with a SERIAL coupled run (global writes only; O4 diagnostics)")
+                    help="replace parCFDDEMrun.sh with a SERIAL coupled run (global writes only; diagnostics)")
     args = ap.parse_args()
 
     rs = (args.ds_um * 1e-6 / 2.0) if args.ds_um else DEF_RS
@@ -728,8 +728,8 @@ def main():
         run_txt = SERIAL_PARCFDDEM
         if args.env_script:
             run_txt = run_txt.replace(
-                "/mnt/gs21/scratch/lyuliyao/CFDEM_NRE/CFDEM_INSTALL/setup_cfdem_env.sh",
-                args.env_script)
+                "${CFDEM_ENV_SCRIPT:?set CFDEM_ENV_SCRIPT to your CFDEM environment script}",
+                "${CFDEM_ENV_SCRIPT:-" + args.env_script + "}")
         run_txt = run_txt.replace("__EXPECT_SOLVER_SHA__", args.expect_solver_sha or "")
         run_txt = run_txt.replace("__EXPECT_LIB_SHA__", args.expect_lib_sha or "")
         (case_dir / "parCFDDEMrun.sh").write_text(run_txt, encoding="utf-8")
@@ -761,11 +761,10 @@ def main():
         "case_name": name,
         "campaign": "mechanism_campaign_20260611",
         "control_type": args.control,
-        "codex_gate_id": args.codex_gate or CODEX_GATE_ID,
         "ddt_voidfraction": args.ddt_voidfraction if args.ddt_voidfraction else "off (solver default; keyword absent)",
         "ddt_voidfraction_steps": args.ddt_voidfraction_steps,
         "smoothing_length": args.smoothing_length,
-        "env_script": args.env_script or "default (production setup_cfdem_env.sh)",
+        "env_script": args.env_script or "default ($CFDEM_ENV_SCRIPT)",
         "expect_solver_sha": args.expect_solver_sha,
         "expect_lib_sha": args.expect_lib_sha,
         "cfd_mesh": list(args.cfd_mesh) if args.cfd_mesh else template_mesh(),

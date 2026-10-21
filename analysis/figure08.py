@@ -1,5 +1,5 @@
 """
-Same as fig_sim3_radius_phi_ang20.py but at alpha = 30 deg.
+Figure 8 — effect of the particle size ratio at alpha = 30 deg.
 
    row 1: d_L = 600  um peak-RBNE snapshot
    row 2: d_L = 1200 um peak-RBNE snapshot
@@ -28,8 +28,6 @@ mpl.rcParams.update({
 })
 
 ROOT = str(REPO)
-SBATCH_C = str(CASES)
-SCR_C = str(CASES)
 OUT = str(OUTPUT)
 os.makedirs(OUT, exist_ok=True)
 
@@ -49,10 +47,9 @@ def case_dir(phi, rl_tag):
                .replace("vf0p30", "vf0p3") \
                .replace("vf0p40", "vf0p4")
     name = f"{name}_rs100um_{rl_tag}_rho2470_cor0p1_mu0p5_ang{ALPHA}"
-    for root in (SBATCH_C, SCR_C):
-        p = os.path.join(root, name)
-        if os.path.isdir(p):
-            return p
+    p = os.path.join(str(CASES), name)
+    if os.path.isdir(p):
+        return p
     raise FileNotFoundError(f"case not found: {name}")
 
 
@@ -146,8 +143,8 @@ for rl_tag, dL_um in RL_TAGS:
 # ---------------- figure ------------------------------------------
 NCOL = len(PHIS)
 NROW = len(RL_TAGS) + 1                  # 2 snapshot rows + 1 curve row
-# match Fig 1's 13-inch render width so font size on the printed page is
-# the same as Fig 1
+# match Figure 6's 13-inch render width so font size on the printed page is
+# the same as in Figure 6
 fig = plt.figure(figsize=(13.0, 6.4))
 gs  = fig.add_gridspec(
     nrows=NROW, ncols=NCOL,
