@@ -45,6 +45,12 @@ utility to make a fresh runnable copy.
 
 ## Validation and retained archive
 
+`provenance/checksums.json` covers the research artifacts under `data/`,
+`cases/`, `paper/` and `simulation/patches/`. Documentation and code are
+versioned by git and are not checksummed; after an intentional change to a
+checksummed file, run `python scripts/update_checksums.py` (CI runs it with
+`--check`).
+
 The bundle validator checks checksums, case / species identities, time coverage,
 height definitions, snapshot means, canonical cross-check data, fluid-profile
 maxima, and the Stokes-control force. Figure scripts generate PDFs and PNGs;
